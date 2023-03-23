@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Carcassone"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Height="720" Width="1280" Title="Carcassone"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown"
+        Icon="/img/icon.ico">
+    <Window.Background>
+        <ImageBrush ImageSource="\img\background.jpg"/>
+    </Window.Background>
 
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Button Style="{DynamicResource ButtonStyleHover}" x:Name="btnStart" Grid.Row="1" Width="250" Content="Játék" FontSize="45" FontFamily="Algerian"  Background="Transparent" Foreground="#F8D035" BorderBrush="Transparent" Click="btnStart_Click">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="40" Opacity="1" ShadowDepth="0" Color="Black"></DropShadowEffect>
+            </Button.Effect>
+        </Button>
+        <Button Style="{DynamicResource ButtonStyleHover}" x:Name="btnSettings" Grid.Row="2" Width="300" Content="Beállítások" FontSize="45" FontFamily="Algerian"  Background="Transparent" Foreground="#F8D035" BorderBrush="Transparent">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="40" Opacity="1" ShadowDepth="0" Color="Black"></DropShadowEffect>
+            </Button.Effect>
+        </Button>
+        <Button Style="{DynamicResource ButtonStyleHover}" x:Name="btnExit" Grid.Row="3" Width="250" Content="Kilépés" FontSize="45" FontFamily="Algerian"  Background="Transparent" Foreground="#F8D035" BorderBrush="Transparent">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="40" Opacity="1" ShadowDepth="0" Color="Black"></DropShadowEffect>
+            </Button.Effect>
+        </Button>
+        <Label Content="© Legalize Trenbolone Acetate" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Gray" FontSize="10"/>
     </Grid>
+    
+
 </Window>

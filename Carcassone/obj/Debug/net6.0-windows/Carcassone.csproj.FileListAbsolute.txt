@@ -1,0 +1,70 @@
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.exe
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.deps.json
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.runtimeconfig.json
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.dll
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.pdb
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.csproj.AssemblyReference.cache
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.cache
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.lref
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.g.resources
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.AssemblyInfoInputs.cache
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.AssemblyInfo.cs
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.csproj.CoreCompileInputs.cache
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.dll
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\refint\Carcassone.dll
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.pdb
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.genruntimeconfig.cache
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\ref\Carcassone.dll
+C:\Users\tanulo\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\App.baml
+D:\Dani mappája\.Home office\vadasz denes verseny\bin\Debug\net6.0-windows\Carcassone.exe
+D:\Dani mappája\.Home office\vadasz denes verseny\bin\Debug\net6.0-windows\Carcassone.deps.json
+D:\Dani mappája\.Home office\vadasz denes verseny\bin\Debug\net6.0-windows\Carcassone.runtimeconfig.json
+D:\Dani mappája\.Home office\vadasz denes verseny\bin\Debug\net6.0-windows\Carcassone.dll
+D:\Dani mappája\.Home office\vadasz denes verseny\bin\Debug\net6.0-windows\Carcassone.pdb
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\Carcassone.csproj.AssemblyReference.cache
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\App.g.cs
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.cache
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.lref
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\App.baml
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\Carcassone.g.resources
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\Carcassone.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\Carcassone.AssemblyInfoInputs.cache
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\Carcassone.AssemblyInfo.cs
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\Carcassone.csproj.CoreCompileInputs.cache
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\Carcassone.dll
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\refint\Carcassone.dll
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\Carcassone.pdb
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\Carcassone.genruntimeconfig.cache
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\ref\Carcassone.dll
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\GameWindow.g.cs
+D:\Dani mappája\.Home office\vadasz denes verseny\obj\Debug\net6.0-windows\GameWindow.baml
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\bin\Debug\net6.0-windows\Carcassone.exe
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\bin\Debug\net6.0-windows\Carcassone.deps.json
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\bin\Debug\net6.0-windows\Carcassone.runtimeconfig.json
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\bin\Debug\net6.0-windows\Carcassone.dll
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\bin\Debug\net6.0-windows\Carcassone.pdb
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone.csproj.AssemblyReference.cache
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\GameWindow.g.cs
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\App.g.cs
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.cache
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.lref
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\App.baml
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\GameWindow.baml
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone.g.resources
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone.AssemblyInfoInputs.cache
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone.AssemblyInfo.cs
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone.csproj.CoreCompileInputs.cache
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone.dll
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\refint\Carcassone.dll
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone.pdb
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone.genruntimeconfig.cache
+D:\Dani mappája\.Home office\Vadasz Denes verseny 2\klonozott\Carcassone\obj\Debug\net6.0-windows\ref\Carcassone.dll

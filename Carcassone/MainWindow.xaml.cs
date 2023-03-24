@@ -37,5 +37,47 @@ namespace Carcassone
             openGame.Show();
             this.Close();
         }
+
+        private void btnStart_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(202, 121, 93));
+            btnStart.Foreground = szines;
+
+        }
+
+        private void btnStart_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(248, 208, 53));
+            btnStart.Foreground = szines;
+        }
+
+        private void btnSettings_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(202, 121, 93));
+            btnSettings.Foreground = szines;
+        }
+
+        private void btnSettings_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(248, 208, 53));
+            btnSettings.Foreground = szines;
+        }
+
+        private void btnExit_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(202, 121, 93));
+            btnExit.Foreground = szines;
+        }
+
+        private void btnExit_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(248, 208, 53));
+            btnExit.Foreground = szines;
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

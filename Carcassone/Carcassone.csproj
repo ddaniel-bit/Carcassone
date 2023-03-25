@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <None Remove="img\background.jpg" />
+    <None Remove="img\background_game.jpg" />
+    <None Remove="img\tren.png" />
     <None Remove="test.ico" />
   </ItemGroup>
 
@@ -16,7 +18,13 @@
     <Resource Include="img\background.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="img\background_game.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="img\icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\tren.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

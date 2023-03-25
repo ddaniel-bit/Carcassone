@@ -30,6 +30,11 @@ namespace Carcassone
                 DragMove();
             }
         }
+
+        private void TalcaraTesz_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
     }
 
 }

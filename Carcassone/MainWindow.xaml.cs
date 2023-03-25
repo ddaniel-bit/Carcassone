@@ -40,44 +40,86 @@ namespace Carcassone
 
         private void btnStart_MouseEnter(object sender, MouseEventArgs e)
         {
-            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(202, 121, 93));
-            btnStart.Foreground = szines;
+            LinearGradientBrush myVerticalGradient = new LinearGradientBrush();
+            myVerticalGradient.StartPoint = new Point(0.5, 0);
+            myVerticalGradient.EndPoint = new Point(0.5, 1);
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 0.0));
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 1.0));
+            btnStart.Foreground = myVerticalGradient;
 
         }
 
         private void btnStart_MouseLeave(object sender, MouseEventArgs e)
         {
-            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(248, 208, 53));
-            btnStart.Foreground = szines;
+            LinearGradientBrush myVerticalGradient = new LinearGradientBrush();
+            myVerticalGradient.StartPoint = new Point(0.5, 0);
+            myVerticalGradient.EndPoint = new Point(0.5, 1);
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 0.0));
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 1.0));
+            btnStart.Foreground = myVerticalGradient;
         }
 
         private void btnSettings_MouseEnter(object sender, MouseEventArgs e)
         {
-            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(202, 121, 93));
-            btnSettings.Foreground = szines;
+            LinearGradientBrush myVerticalGradient = new LinearGradientBrush();
+            myVerticalGradient.StartPoint = new Point(0.5, 0);
+            myVerticalGradient.EndPoint = new Point(0.5, 1);
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 0.0));
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 1.0));
+            btnSettings.Foreground = myVerticalGradient;
         }
 
         private void btnSettings_MouseLeave(object sender, MouseEventArgs e)
         {
-            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(248, 208, 53));
-            btnSettings.Foreground = szines;
+            LinearGradientBrush myVerticalGradient = new LinearGradientBrush();
+            myVerticalGradient.StartPoint = new Point(0.5, 0);
+            myVerticalGradient.EndPoint = new Point(0.5, 1);
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 0.0));
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 1.0));
+            btnSettings.Foreground = myVerticalGradient;
         }
 
         private void btnExit_MouseEnter(object sender, MouseEventArgs e)
         {
-            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(202, 121, 93));
-            btnExit.Foreground = szines;
+            LinearGradientBrush myVerticalGradient = new LinearGradientBrush();
+            myVerticalGradient.StartPoint = new Point(0.5, 0);
+            myVerticalGradient.EndPoint = new Point(0.5, 1);
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 0.0));
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 1.0));
+            btnExit.Foreground = myVerticalGradient;
         }
 
         private void btnExit_MouseLeave(object sender, MouseEventArgs e)
         {
-            SolidColorBrush szines = new SolidColorBrush(Color.FromRgb(248, 208, 53));
-            btnExit.Foreground = szines;
+            LinearGradientBrush myVerticalGradient = new LinearGradientBrush();
+            myVerticalGradient.StartPoint = new Point(0.5, 0);
+            myVerticalGradient.EndPoint = new Point(0.5, 1);
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 0.0));
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 1.0));
+
+            btnExit.Foreground = myVerticalGradient;
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void TalcaraTesz_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
         }
     }
 }

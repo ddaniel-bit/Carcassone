@@ -8,39 +8,143 @@
         Height="720" Width="1280" Title="Carcassone"
         WindowStyle="None"
         ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         MouseDown="Window_MouseDown"
         Icon="/img/icon.ico">
-    <Window.Background>
-        <ImageBrush ImageSource="\img\background.jpg"/>
-    </Window.Background>
+    <Border CornerRadius="25">
+        <Border.Background>
+            <ImageBrush ImageSource="\img\background.jpg"/>
+        </Border.Background>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="8*"/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
 
-        </Grid.RowDefinitions>
-        <Button Style="{DynamicResource ButtonStyleHover}" x:Name="btnStart" Grid.Row="1" Width="250" Content="Játék" FontSize="45" FontFamily="Algerian"  Background="Transparent" Foreground="#F8D035" BorderBrush="Transparent" Click="btnStart_Click" MouseEnter="btnStart_MouseEnter" MouseLeave="btnStart_MouseLeave">
-            <Button.Effect>
-                <DropShadowEffect BlurRadius="40" Opacity="1" ShadowDepth="0" Color="Black"></DropShadowEffect>
-            </Button.Effect>
-        </Button>
-        <Button Style="{DynamicResource ButtonStyleHover}" x:Name="btnSettings" Grid.Row="2" Width="300" Content="Beállítások" FontSize="45" FontFamily="Algerian"  Background="Transparent" Foreground="#F8D035" BorderBrush="Transparent" MouseEnter="btnSettings_MouseEnter" MouseLeave="btnSettings_MouseLeave">
-            <Button.Effect>
-                <DropShadowEffect BlurRadius="40" Opacity="1" ShadowDepth="0" Color="Black"></DropShadowEffect>
-            </Button.Effect>
-        </Button>
-        <Button Style="{DynamicResource ButtonStyleHover}" x:Name="btnExit" Grid.Row="3" Width="250" Content="Kilépés" FontSize="45" FontFamily="Algerian"  Background="Transparent" Foreground="#F8D035" BorderBrush="Transparent" MouseEnter="btnExit_MouseEnter" MouseLeave="btnExit_MouseLeave" Click="btnExit_Click">
-            <Button.Effect>
-                <DropShadowEffect BlurRadius="40" Opacity="1" ShadowDepth="0" Color="Black"></DropShadowEffect>
-            </Button.Effect>
-        </Button>
-        <Label Content="© Legalize Trenbolone Acetate" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Gray" FontSize="10"/>
-    </Grid>
+            </Grid.RowDefinitions>
+            <StackPanel HorizontalAlignment="Right">
+                <Button Style="{DynamicResource ButtonStyleHover}"
+                    x:Name="TalcaraTesz"
+                    Background="Transparent"
+                    Content="-"
+                    FontSize="50"
+                    Cursor="Hand"
+                    BorderBrush="Transparent"
+                    Click="TalcaraTesz_Click"
+                    Margin="0 -15 15 0"
+                    >
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
 
+                    <Button.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE55C"/>
+                            <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Foreground>
+
+                </Button>
+            </StackPanel>
+            
+
+
+
+            <Button Style="{DynamicResource ButtonStyleHover}"
+                    x:Name="btnStart"
+                    Grid.Row="2"
+                    Width="145"
+                    Content="Játék"
+                    FontSize="45"
+                    FontFamily="Algerian"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Click="btnStart_Click"
+                    MouseEnter="btnStart_MouseEnter"
+                    MouseLeave="btnStart_MouseLeave"
+                    Cursor="Hand">
+
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE55C"/>
+                        <GradientStop Color="#B5634A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+
+            </Button>
+            <Button Style="{DynamicResource ButtonStyleHover}"
+                    x:Name="btnSettings"
+                    Grid.Row="3"
+                    Width="300"
+                    Content="Beállítások"
+                    FontSize="45"
+                    FontFamily="Algerian"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    MouseEnter="btnSettings_MouseEnter"
+                    MouseLeave="btnSettings_MouseLeave"
+                    Cursor="Hand">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE55C"/>
+                        <GradientStop Color="#B5634A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+
+            </Button>
+            <Button Style="{DynamicResource ButtonStyleHover}"
+                    x:Name="btnExit"
+                    Grid.Row="4"
+                    Width="180"
+                    Content="Kilépés"
+                    FontSize="45"
+                    FontFamily="Algerian"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    MouseEnter="btnExit_MouseEnter"
+                    MouseLeave="btnExit_MouseLeave"
+                    Click="btnExit_Click"
+                    Cursor="Hand">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE55C"/>
+                        <GradientStop Color="#B5634A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+
+            </Button>
+
+            <Image Grid.Row="5"
+                   Source="/img/tren.png"
+                   Margin="-72,19,72,16"
+                   Height="15"/>
+
+            <Label Content="Legalize Trenbolone Acetate"
+                   Grid.Row="5"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Foreground="Gray"
+                   FontSize="10"/>
+        </Grid>
+    </Border>
 
 </Window>

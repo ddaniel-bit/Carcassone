@@ -8,10 +8,65 @@
         Height="720" Width="1280" Title="Carcassone"
         WindowStyle="None"
         ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         MouseDown="Window_MouseDown"
         Icon="/img/icon.ico">
-    <Grid>
-        
-    </Grid>
+    <Border CornerRadius="25">
+        <Border.Background>
+            <ImageBrush ImageSource="\img\background_game.jpg"/>
+        </Border.Background>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition  Height="0.4*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition  Width="0.5*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel HorizontalAlignment="Right" Grid.Column="10">
+                <Button Style="{DynamicResource ButtonStyleHover}"
+                    x:Name="TalcaraTesz"
+                    Background="Transparent"
+                    Content="-"
+                    FontSize="50"
+                    Cursor="Hand"
+                    BorderBrush="Transparent"
+                    Margin="0 -15 15 0" Click="TalcaraTesz_Click"
+                    >
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+
+                    <Button.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE55C"/>
+                            <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Foreground>
+
+                </Button>
+            </StackPanel>
+            <Image Grid.Column="1" Grid.Row="1"/>
+
+        </Grid>
+    </Border>
 </Window>

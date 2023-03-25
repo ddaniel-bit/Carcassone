@@ -31,7 +31,7 @@ namespace Carcassone
             }
         }
 
-        private void TalcaraTesz_Click(object sender, RoutedEventArgs e)
+        private void btnTalcaraTesz_Click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
         }

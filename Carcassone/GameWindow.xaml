@@ -43,13 +43,13 @@
 
             <StackPanel HorizontalAlignment="Right" Grid.Column="10">
                 <Button Style="{DynamicResource ButtonStyleHover}"
-                    x:Name="TalcaraTesz"
+                    x:Name="btnTalcaraTesz"
                     Background="Transparent"
                     Content="-"
                     FontSize="50"
                     Cursor="Hand"
                     BorderBrush="Transparent"
-                    Margin="0 -15 15 0" Click="TalcaraTesz_Click"
+                    Margin="0 -15 15 0" Click="btnTalcaraTesz_Click"
                     >
                     <Button.Effect>
                         <DropShadowEffect/>

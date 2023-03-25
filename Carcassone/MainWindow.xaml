@@ -30,15 +30,15 @@
             </Grid.RowDefinitions>
             <StackPanel HorizontalAlignment="Right">
                 <Button Style="{DynamicResource ButtonStyleHover}"
-                    x:Name="TalcaraTesz"
+                    x:Name="btnTalcaraTesz"
                     Background="Transparent"
                     Content="-"
                     FontSize="50"
                     Cursor="Hand"
                     BorderBrush="Transparent"
-                    Click="TalcaraTesz_Click"
+                    Click="btnTalcaraTesz_Click"
                     Margin="0 -15 15 0"
-                    >
+                    Height="50">
                     <Button.Effect>
                         <DropShadowEffect/>
                     </Button.Effect>

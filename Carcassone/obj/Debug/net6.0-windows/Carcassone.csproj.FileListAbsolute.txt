@@ -92,3 +92,27 @@ D:\Dani mappája\.Home office\Vadasz Denes verseny\klonozott\Carcassone\obj\Debu
 D:\Dani mappája\.Home office\Vadasz Denes verseny\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone.pdb
 D:\Dani mappája\.Home office\Vadasz Denes verseny\klonozott\Carcassone\obj\Debug\net6.0-windows\Carcassone.genruntimeconfig.cache
 D:\Dani mappája\.Home office\Vadasz Denes verseny\klonozott\Carcassone\obj\Debug\net6.0-windows\ref\Carcassone.dll
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.exe
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.deps.json
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.runtimeconfig.json
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.dll
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.pdb
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.csproj.AssemblyReference.cache
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\GameWindow.g.cs
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.cache
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.lref
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\App.baml
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\GameWindow.baml
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.g.resources
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.AssemblyInfoInputs.cache
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.AssemblyInfo.cs
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.csproj.CoreCompileInputs.cache
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.dll
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\refint\Carcassone.dll
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.pdb
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.genruntimeconfig.cache
+C:\Users\Krisztian\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\ref\Carcassone.dll

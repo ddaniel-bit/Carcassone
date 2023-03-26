@@ -22,6 +22,8 @@ namespace Carcassone
     /// </summary>
     public partial class MainWindow : Window
     {
+        Uri hoversound = new Uri("hoversound.mp3", UriKind.RelativeOrAbsolute);
+        MediaPlayer player = new MediaPlayer();
         public MainWindow()
         {
             InitializeComponent();
@@ -42,7 +44,8 @@ namespace Carcassone
 
         private void btnStart_MouseEnter(object sender, MouseEventArgs e)
         {
-            MenuHoverSound();
+            player.Open(hoversound);
+            player.Play();
 
             LinearGradientBrush myVerticalGradient = MouseEnterColor();
             btnStart.Foreground = myVerticalGradient;
@@ -56,7 +59,8 @@ namespace Carcassone
 
         private void btnSettings_MouseEnter(object sender, MouseEventArgs e)
         {
-            MenuHoverSound();
+            player.Open(hoversound);
+            player.Play();
 
             LinearGradientBrush myVerticalGradient = MouseEnterColor();
             btnSettings.Foreground = myVerticalGradient;
@@ -70,7 +74,8 @@ namespace Carcassone
 
         private void btnExit_MouseEnter(object sender, MouseEventArgs e)
         {
-            MenuHoverSound();
+            player.Open(hoversound);
+            player.Play();
 
             LinearGradientBrush myVerticalGradient = MouseEnterColor();
             btnExit.Foreground = myVerticalGradient;
@@ -109,14 +114,6 @@ namespace Carcassone
             myVerticalGradient.GradientStops.Add(
                 new GradientStop(Color.FromRgb(181, 99, 74), 1.0));
             return myVerticalGradient;
-        }
-
-        private static void MenuHoverSound()
-        {
-            var uri = new Uri("hoversound.mp3", UriKind.RelativeOrAbsolute);
-            var player = new MediaPlayer();
-            player.Open(uri);
-            player.Play();
         }
 
         private void btnTalcaraTesz_Click(object sender, RoutedEventArgs e)

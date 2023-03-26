@@ -1,6 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -40,9 +42,10 @@ namespace Carcassone
 
         private void btnStart_MouseEnter(object sender, MouseEventArgs e)
         {
+            MenuHoverSound();
+
             LinearGradientBrush myVerticalGradient = MouseEnterColor();
             btnStart.Foreground = myVerticalGradient;
-
         }
 
         private void btnStart_MouseLeave(object sender, MouseEventArgs e)
@@ -53,6 +56,8 @@ namespace Carcassone
 
         private void btnSettings_MouseEnter(object sender, MouseEventArgs e)
         {
+            MenuHoverSound();
+
             LinearGradientBrush myVerticalGradient = MouseEnterColor();
             btnSettings.Foreground = myVerticalGradient;
         }
@@ -65,6 +70,8 @@ namespace Carcassone
 
         private void btnExit_MouseEnter(object sender, MouseEventArgs e)
         {
+            MenuHoverSound();
+
             LinearGradientBrush myVerticalGradient = MouseEnterColor();
             btnExit.Foreground = myVerticalGradient;
         }
@@ -104,9 +111,22 @@ namespace Carcassone
             return myVerticalGradient;
         }
 
+        private static void MenuHoverSound()
+        {
+            var uri = new Uri("hoversound.mp3", UriKind.RelativeOrAbsolute);
+            var player = new MediaPlayer();
+            player.Open(uri);
+            player.Play();
+        }
+
         private void btnTalcaraTesz_Click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
+        }
+
+        private void btnSettings_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Krisztian\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\
+C:\Users\Tamás\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\
 Carcassone
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Krisztian\source\repos\Carcassone\Carcassone\App.xaml
+C:\Users\Tamás\source\repos\Carcassone\Carcassone\App.xaml
 2396499192
 
-4-203608336
+5-1084786600
 194-1617825143
 GameWindow.xaml;MainWindow.xaml;
 
-False
+True
 

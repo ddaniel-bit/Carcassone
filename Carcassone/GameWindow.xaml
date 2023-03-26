@@ -1,4 +1,4 @@
-﻿<Window x:Class="Carcassone.GameWindow"
+<Window x:Class="Carcassone.GameWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -19,13 +19,13 @@
         </Border.Background>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.5*"/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
-                <RowDefinition  Height="0.4*"/>
+                <RowDefinition  Height="0.5*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*"/>
@@ -65,7 +65,53 @@
 
                 </Button>
             </StackPanel>
-            <Image Grid.Column="1" Grid.Row="1"/>
+            <Image Grid.Column="1" Grid.Row="1" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="1" Grid.Row="2" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="1" Grid.Row="3" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="1" Grid.Row="4" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="1" Grid.Row="5" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+
+            <Image Grid.Column="2" Grid.Row="1" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="2" Grid.Row="2" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="2" Grid.Row="3" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="2" Grid.Row="4" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="2" Grid.Row="5" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+
+            <Image Grid.Column="3" Grid.Row="1" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="3" Grid.Row="2" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="3" Grid.Row="3" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="3" Grid.Row="4" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="3" Grid.Row="5" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+
+            <Image Grid.Column="4" Grid.Row="1" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="4" Grid.Row="2" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="4" Grid.Row="3" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="4" Grid.Row="4" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="4" Grid.Row="5" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+
+            <Image Grid.Column="5" Grid.Row="1" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="5" Grid.Row="2" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="5" Grid.Row="3" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="5" Grid.Row="4" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="5" Grid.Row="5" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+
+            <Image Grid.Column="6" Grid.Row="1" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="6" Grid.Row="2" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="6" Grid.Row="3" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="6" Grid.Row="4" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="6" Grid.Row="5" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+
+            <Image Grid.Column="7" Grid.Row="1" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="7" Grid.Row="2" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="7" Grid.Row="3" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="7" Grid.Row="4" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="7" Grid.Row="5" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+
+            <Image Grid.Column="8" Grid.Row="1" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="8" Grid.Row="2" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="8" Grid.Row="3" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="8" Grid.Row="4" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="8" Grid.Row="5" Source="/img/kartyak/default.png"   Stretch="Fill"/>
 
         </Grid>
     </Border>

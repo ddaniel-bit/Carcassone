@@ -25,7 +25,41 @@ namespace Carcassone
         public GameWindow()
         {
             InitializeComponent();
+            BetoltGombokat();
         }
+
+        private void BetoltGombokat()
+        {
+            for (int sorIndex = 0; sorIndex < 5; sorIndex++)
+            {
+                for (int oszlopIndex = 0; oszlopIndex < 8; oszlopIndex++)
+                {
+                    Button ujgomb = new Button();
+                    //ujgomb.Background = Brushes.Transparent;
+                    ujgomb.Opacity = 0.2;
+                    ujgomb.Cursor = Cursors.Hand;
+                    ujgomb.Name = "btn"+sorIndex.ToString()+"_"+oszlopIndex.ToString();
+                    ujgomb.Click += gombClick;
+                    Grid.SetRow(ujgomb, sorIndex+1);
+                    Grid.SetColumn(ujgomb, oszlopIndex+1);
+                    this.gameGrid.Children.Add(ujgomb);
+                }
+             
+            }
+        }
+
+        private void gombClick(object sender, RoutedEventArgs e)
+        {
+            Button b = sender as Button;
+            int sor = Grid.GetRow(b);
+            int oszlop = Grid.GetColumn(b);
+            b.Focusable = false;
+            b.Opacity = 1;
+            //b.Background = new ImageBrush(new BitmapImage(new Uri(@"C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\img\kartyak\kolostor.png", UriKind.Relative)));
+            b.Background = new ImageBrush(new BitmapImage(new Uri(@"./img/kartyak/kolostor.png", UriKind.Relative)));
+        }
+
+
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
@@ -53,12 +87,12 @@ namespace Carcassone
 
         public Cards(char left, char right, char top, char bottom, char center, string bgImage)
         {
-            this.Left = left;
-            this.Right = right;
-            this.Top = top;
-            this.Bottom = bottom;
-            this.Center = center;
-            this.BgImage = bgImage;
+            this.left = left;
+            this.right = right;
+            this.top = top;
+            this.bottom = bottom;
+            this.center = center;
+            this.bgImage = bgImage;
         }
 
         public char Left { get => left; }
@@ -66,7 +100,7 @@ namespace Carcassone
         public char Top { get => top; }
         public char Bottom { get => bottom; }
         public char Center { get => center; }
-        public char BgImage { get => bgImage; }
+        public string BgImage { get => bgImage; }
 
         public void Rotate(Cards card, bool direction) //direction = True => Jobbra forgatás,		direction = False => Balra forgatás.
         {

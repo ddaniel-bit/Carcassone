@@ -140,3 +140,101 @@ C:\Users\Tamás\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\refi
 C:\Users\Tamás\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.pdb
 C:\Users\Tamás\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.genruntimeconfig.cache
 C:\Users\Tamás\Source\Repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\ref\Carcassone.dll
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.csproj.AssemblyReference.cache
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\GameWindow.g.cs
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.cache
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.lref
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.dll
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\refint\Carcassone.dll
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.pdb
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.exe
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.deps.json
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.runtimeconfig.json
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.dll
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.pdb
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\App.baml
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\GameWindow.baml
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.g.resources
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.AssemblyInfoInputs.cache
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.AssemblyInfo.cs
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.csproj.CoreCompileInputs.cache
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.genruntimeconfig.cache
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\ref\Carcassone.dll
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\default.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\kolostor_ut.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\ut_egyenes.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\ut_kanyar.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\ut_keresztezodes1.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\ut_keresztezodes2.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\vaors-mezo4.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\vaors_kanyar3.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\vaors_kanyar3_pajzs.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\vaors_ut_egyenes.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos-mezo4_pajzs.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo1.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo2.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo2_pajzs.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo3.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo4.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo5.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo5_pajzs.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_ut_egyenes2.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_ut_egyenes2_pajzs.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_ut_kanyar1.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_ut_kanyar2.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_ut_keresztezodes1.png
+C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\kolostor.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.exe
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\default.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\kolostor.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\kolostor_ut.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\ut_egyenes.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\ut_kanyar.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\ut_keresztezodes1.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\ut_keresztezodes2.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\vaors-mezo4.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\vaors_kanyar3.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\vaors_kanyar3_pajzs.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\vaors_ut_egyenes.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos-mezo4_pajzs.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo1.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo2.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo2_pajzs.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo3.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo4.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo5.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_mezo5_pajzs.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_ut_egyenes2.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_ut_egyenes2_pajzs.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_ut_kanyar1.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_ut_kanyar2.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\img\kartyak\varos_ut_keresztezodes1.png
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.deps.json
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.runtimeconfig.json
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.dll
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\bin\Debug\net6.0-windows\Carcassone.pdb
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.csproj.AssemblyReference.cache
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\GameWindow.g.cs
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\App.g.cs
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.cache
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone_MarkupCompile.lref
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\App.baml
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\GameWindow.baml
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.g.resources
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.AssemblyInfoInputs.cache
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.AssemblyInfo.cs
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.csproj.CoreCompileInputs.cache
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.dll
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\refint\Carcassone.dll
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.pdb
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\Carcassone.genruntimeconfig.cache
+D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassone\Carcassone\Carcassone\obj\Debug\net6.0-windows\ref\Carcassone.dll

@@ -17,7 +17,7 @@
         <Border.Background>
             <ImageBrush ImageSource="\img\background_game.jpg"/>
         </Border.Background>
-        <Grid>
+        <Grid x:Name="gameGrid">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.5*"/>
                 <RowDefinition/>
@@ -65,7 +65,7 @@
 
                 </Button>
             </StackPanel>
-            <Image Grid.Column="1" Grid.Row="1" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <!--<Image Grid.Column="1" Grid.Row="1" Source="/img/kartyak/default.png"   Stretch="Fill"/>
             <Image Grid.Column="1" Grid.Row="2" Source="/img/kartyak/default.png"   Stretch="Fill"/>
             <Image Grid.Column="1" Grid.Row="3" Source="/img/kartyak/default.png"   Stretch="Fill"/>
             <Image Grid.Column="1" Grid.Row="4" Source="/img/kartyak/default.png"   Stretch="Fill"/>
@@ -111,7 +111,7 @@
             <Image Grid.Column="8" Grid.Row="2" Source="/img/kartyak/default.png"   Stretch="Fill"/>
             <Image Grid.Column="8" Grid.Row="3" Source="/img/kartyak/default.png"   Stretch="Fill"/>
             <Image Grid.Column="8" Grid.Row="4" Source="/img/kartyak/default.png"   Stretch="Fill"/>
-            <Image Grid.Column="8" Grid.Row="5" Source="/img/kartyak/default.png"   Stretch="Fill"/>
+            <Image Grid.Column="8" Grid.Row="5" Source="/img/kartyak/default.png"   Stretch="Fill"/>-->
 
         </Grid>
     </Border>

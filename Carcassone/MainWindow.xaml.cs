@@ -23,10 +23,13 @@ namespace Carcassone
     public partial class MainWindow : Window
     {
         Uri hoversound = new Uri("hoversound.mp3", UriKind.RelativeOrAbsolute);
-        MediaPlayer player = new MediaPlayer();
+        MediaPlayer hoverplayer = new MediaPlayer();
+
+        MediaPlayer musicplayer = new MediaPlayer();
         public MainWindow()
         {
             InitializeComponent();
+            PlaybackMusic();
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -44,47 +47,41 @@ namespace Carcassone
 
         private void btnStart_MouseEnter(object sender, MouseEventArgs e)
         {
-            player.Open(hoversound);
-            player.Play();
+            hoverplayer.Open(hoversound);
+            hoverplayer.Play();
 
-            LinearGradientBrush myVerticalGradient = MouseEnterColor();
-            btnStart.Foreground = myVerticalGradient;
+            btnStart.Foreground = MouseEnterColor();
         }
 
         private void btnStart_MouseLeave(object sender, MouseEventArgs e)
         {
-            LinearGradientBrush myVerticalGradient = MouseLeaveColor();
-            btnStart.Foreground = myVerticalGradient;
+            btnStart.Foreground = MouseLeaveColor();
         }
 
         private void btnSettings_MouseEnter(object sender, MouseEventArgs e)
         {
-            player.Open(hoversound);
-            player.Play();
+            hoverplayer.Open(hoversound);
+            hoverplayer.Play();
 
-            LinearGradientBrush myVerticalGradient = MouseEnterColor();
-            btnSettings.Foreground = myVerticalGradient;
+            btnSettings.Foreground = MouseEnterColor();
         }
 
         private void btnSettings_MouseLeave(object sender, MouseEventArgs e)
         {
-            LinearGradientBrush myVerticalGradient = MouseLeaveColor();
-            btnSettings.Foreground = myVerticalGradient;
+            btnSettings.Foreground = MouseLeaveColor();
         }
 
         private void btnExit_MouseEnter(object sender, MouseEventArgs e)
         {
-            player.Open(hoversound);
-            player.Play();
+            hoverplayer.Open(hoversound);
+            hoverplayer.Play();
 
-            LinearGradientBrush myVerticalGradient = MouseEnterColor();
-            btnExit.Foreground = myVerticalGradient;
+            btnExit.Foreground = MouseEnterColor();
         }
 
         private void btnExit_MouseLeave(object sender, MouseEventArgs e)
         {
-            LinearGradientBrush myVerticalGradient = MouseLeaveColor();
-            btnExit.Foreground = myVerticalGradient;
+            btnExit.Foreground = MouseLeaveColor();
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
@@ -124,6 +121,25 @@ namespace Carcassone
         private void btnSettings_Click(object sender, RoutedEventArgs e)
         {
             
+        }
+
+        public void PlaybackMusic()
+        {
+            if (musicplayer != null)
+            {
+                musicplayer.Open(new Uri("MainWindowMusic.mp3", UriKind.RelativeOrAbsolute));
+                musicplayer.MediaEnded += new EventHandler(Media_Ended);
+                musicplayer.Volume = 0.1;
+                musicplayer.Play();
+
+                return;
+            }
+        }
+        private void Media_Ended(object sender, EventArgs e)
+        {
+            musicplayer.Open(new Uri("MainWindowMusic.mp3", UriKind.RelativeOrAbsolute));
+            musicplayer.Volume = 0.1;
+            musicplayer.Play();
         }
     }
 }

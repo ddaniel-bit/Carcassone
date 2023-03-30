@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -53,10 +53,15 @@ namespace Carcassone
             Button b = sender as Button;
             int sor = Grid.GetRow(b);
             int oszlop = Grid.GetColumn(b);
-            b.Focusable = false;
-            b.Opacity = 1;
-            //b.Background = new ImageBrush(new BitmapImage(new Uri(@"C:\Users\tanulo\source\repos\Carcassone\Carcassone\Carcassone\img\kartyak\kolostor.png", UriKind.Relative)));
-            b.Background = new ImageBrush(new BitmapImage(new Uri(@"./img/kartyak/kolostor.png", UriKind.Relative)));
+
+            b.IsEnabled = false;
+
+            Canvas can = new Canvas();
+            Grid.SetRow(can, sor);
+            Grid.SetColumn(can, oszlop);
+            can.Background = new ImageBrush(new BitmapImage(new Uri(@"./img/kartyak/kolostor.png", UriKind.Relative)));
+            this.gameGrid.Children.Add(can);
+
         }
 
 

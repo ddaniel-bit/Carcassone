@@ -10,7 +10,31 @@
   <ItemGroup>
     <None Remove="img\background.jpg" />
     <None Remove="img\background_game.jpg" />
+    <None Remove="img\kartyak\rrrr_k.png" />
+    <None Remove="img\kartyak\rrru_k.png" />
+    <None Remove="img\kartyak\rvrr_r.png" />
+    <None Remove="img\kartyak\rvrv_r.png" />
+    <None Remove="img\kartyak\rvuu_u.png" />
+    <None Remove="img\kartyak\rvvr_c.png" />
+    <None Remove="img\kartyak\rvvr_r.png" />
+    <None Remove="img\kartyak\urru_u.png" />
+    <None Remove="img\kartyak\urur_u.png" />
+    <None Remove="img\kartyak\uruu_u.png" />
+    <None Remove="img\kartyak\uuuu_u.png" />
+    <None Remove="img\kartyak\uvru_u.png" />
+    <None Remove="img\kartyak\uvur_u.png" />
+    <None Remove="img\kartyak\uvuu_u.png" />
+    <None Remove="img\kartyak\uvvu_c.png" />
+    <None Remove="img\kartyak\uvvu_u.png" />
+    <None Remove="img\kartyak\vrvr_c.png" />
+    <None Remove="img\kartyak\vrvr_v.png" />
+    <None Remove="img\kartyak\vvvr_c.png" />
+    <None Remove="img\kartyak\vvvr_v.png" />
+    <None Remove="img\kartyak\vvvu_c.png" />
+    <None Remove="img\kartyak\vvvu_v.png" />
+    <None Remove="img\kartyak\vvvv_c.png" />
     <None Remove="img\tren.png" />
+    <None Remove="rrrr_k.png" />
     <None Remove="test.ico" />
   </ItemGroup>
 
@@ -24,7 +48,79 @@
     <Resource Include="img\icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="img\kartyak\rrrr_k.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\rrru_k.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\rvrr_r.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\rvrv_r.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\rvuu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\rvvr_c.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\rvvr_r.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\urru_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\urur_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uruu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uuuu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uvru_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uvur_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uvuu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uvvu_c.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uvvu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vrvr_c.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vrvr_v.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vvvr_c.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vvvr_v.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vvvu_c.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vvvu_v.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vvvv_c.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="img\tren.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="rrrr_k.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

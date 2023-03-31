@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassone\\Carcassone\\Carcassone\\Carcassone.csproj": {}
+    "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassone3\\Carcassone\\Carcassone.csproj": {}
   },
   "projects": {
-    "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassone\\Carcassone\\Carcassone\\Carcassone.csproj": {
+    "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassone3\\Carcassone\\Carcassone.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassone\\Carcassone\\Carcassone\\Carcassone.csproj",
+        "projectUniqueName": "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassone3\\Carcassone\\Carcassone.csproj",
         "projectName": "Carcassone",
-        "projectPath": "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassone\\Carcassone\\Carcassone\\Carcassone.csproj",
+        "projectPath": "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassone3\\Carcassone\\Carcassone.csproj",
         "packagesPath": "C:\\Users\\ddaniel\\.nuget\\packages\\",
-        "outputPath": "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassone\\Carcassone\\Carcassone\\obj\\",
+        "outputPath": "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassone3\\Carcassone\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

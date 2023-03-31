@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,13 +20,21 @@ namespace Carcassone
     /// </summary>
     public partial class GameWindow : Window
     {
-
-        
+        Random vel = new Random();
+        string[] filePaths = Directory.GetFiles(@".\img\kartyak\", "*.png", SearchOption.TopDirectoryOnly);
+        string randomlap;
 
         public GameWindow()
         {
             InitializeComponent();
             BetoltGombokat();
+            LapValasztas();
+        }
+
+        private void LapValasztas()
+        {
+            randomlap = filePaths[vel.Next(23)];
+            preview.Source = new BitmapImage(new Uri(@$"{randomlap}", UriKind.Relative));
         }
 
         private void BetoltGombokat()
@@ -38,29 +47,40 @@ namespace Carcassone
                     //ujgomb.Background = Brushes.Transparent;
                     ujgomb.Opacity = 0.2;
                     ujgomb.Cursor = Cursors.Hand;
-                    ujgomb.Name = "btn"+sorIndex.ToString()+"_"+oszlopIndex.ToString();
+                    ujgomb.Name = "btn" + sorIndex.ToString() + "_" + oszlopIndex.ToString();
                     ujgomb.Click += gombClick;
-                    Grid.SetRow(ujgomb, sorIndex+1);
-                    Grid.SetColumn(ujgomb, oszlopIndex+1);
+                    Grid.SetRow(ujgomb, sorIndex + 1);
+                    Grid.SetColumn(ujgomb, oszlopIndex + 1);
                     this.gameGrid.Children.Add(ujgomb);
                 }
-             
+
             }
         }
 
         private void gombClick(object sender, RoutedEventArgs e)
         {
+
             Button b = sender as Button;
             int sor = Grid.GetRow(b);
             int oszlop = Grid.GetColumn(b);
 
-            b.IsEnabled = false;
+            //       b.IsEnabled = false;
 
-            Canvas can = new Canvas();
-            Grid.SetRow(can, sor);
-            Grid.SetColumn(can, oszlop);
-            can.Background = new ImageBrush(new BitmapImage(new Uri(@"./img/kartyak/kolostor.png", UriKind.Relative)));
-            this.gameGrid.Children.Add(can);
+            //      Canvas can = new Canvas();
+            //      Grid.SetRow(can, sor);
+            //      Grid.SetColumn(can, oszlop);
+            if (b.Background.ToString() == "#FFDDDDDD")
+            {
+                Style Temp;
+                Temp = (Style)this.FindResource("ButtonStyleHover");
+                b.Style = Temp;
+                b.Opacity = 1;
+                b.Background = new ImageBrush(new BitmapImage(new Uri(@$"{randomlap}", UriKind.Relative)));
+                LapValasztas();
+            }
+
+
+            //     this.gameGrid.Children.Add(can);
 
         }
 
@@ -78,7 +98,17 @@ namespace Carcassone
             WindowState = WindowState.Minimized;
         }
 
-        
+        private void Border_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Key.Escape:
+                    Close();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
     public class Cards
@@ -90,14 +120,14 @@ namespace Carcassone
         char center;
         string bgImage;
 
-        public Cards(char left, char right, char top, char bottom, char center, string bgImage)
+        public Cards(char left, char right, char top, char bottom, char center)
         {
             this.left = left;
             this.right = right;
             this.top = top;
             this.bottom = bottom;
             this.center = center;
-            this.bgImage = bgImage;
+            //   this.bgImage = left.ToString() +  top.ToString() + right.ToString() + bottom.ToString() + "_" + center.ToString()+".png";
         }
 
         public char Left { get => left; }

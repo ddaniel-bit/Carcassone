@@ -139,6 +139,8 @@ namespace Carcassone
                 Temp = (Style)this.FindResource("ButtonStyleHover");
                 b.Style = Temp;
                 b.Opacity = 1;
+                b.Cursor = Cursors.Arrow;
+                b.BorderBrush = Brushes.Transparent;
 
                 b.Background = new ImageBrush(new BitmapImage(new Uri(@$"{randomlap}", UriKind.Relative)));
                 UrikTarolva[sor - 1, oszlop - 1] = randomlap;

@@ -283,6 +283,16 @@ namespace Carcassone
                     break;
             }
         }
+        //forgatas gombok:
+        private void RotateRight_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RotateLeft_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 
    

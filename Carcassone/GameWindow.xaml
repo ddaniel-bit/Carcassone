@@ -13,7 +13,7 @@
         WindowStartupLocation="CenterScreen"
         MouseDown="Window_MouseDown"
         Icon="/img/icon.ico">
-    <Border CornerRadius="25" PreviewKeyDown="Border_PreviewKeyDown">
+     <Border CornerRadius="25" PreviewKeyDown="Border_PreviewKeyDown">
         <Border.Background>
             <ImageBrush ImageSource="\img\background_game.jpg"/>
         </Border.Background>
@@ -64,9 +64,42 @@
 
                 </Button>
             </StackPanel>
+            
+            <Label Content="Következő lap:" Grid.Column="10" Grid.Row="1" FontFamily="Algerian" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="25">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE55C"/>
+                        <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+            </Label>
+            <Image x:Name="preview" Margin="20 35 20 0" Grid.Column="10" Grid.Row="1" Grid.RowSpan="2" Source="/rrrr_k.png">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+            </Image>
 
-            <Image x:Name="preview" Margin="20" Grid.Column="10" Grid.Row="1" Grid.RowSpan="2" Source="/rrrr_k.png"/>
 
+
+            <Button x:Name="RotateRight" Style="{StaticResource ButtonStyleHover}" Grid.Column="10" Grid.Row="3" HorizontalAlignment="Right" Margin="10 10 45 10" Background="Transparent" BorderBrush="Transparent" Click="RotateRight_Click_1">
+                <Image Source=".\img\RotateRight.png">
+                    <Image.Effect>
+                        <DropShadowEffect/>
+                    </Image.Effect>
+                </Image>
+            </Button>
+
+            <Button x:Name="RotateLeft" Style="{StaticResource ButtonStyleHover}" Grid.Column="10" Grid.Row="3" HorizontalAlignment="Left" Margin="45 10 10 10" Background="Transparent" BorderBrush="Transparent" Click="RotateLeft_Click">
+                <Image Source=".\img\RotateLeft.png">
+                    <Image.Effect>
+                        <DropShadowEffect/>
+                    </Image.Effect>
+                </Image>
+            </Button>
 
         </Grid>
     </Border>

@@ -39,6 +39,11 @@ namespace Carcassone
             UrikTaroloFeltoltes();
             BetoltGombokat();
             LapValasztas();
+
+            Cards proba = new Cards(filePaths[7]);
+            proba.Info();
+            proba.Rotate(false);
+            proba.Info();
         }
 
         private void LapValasztas()
@@ -79,10 +84,6 @@ namespace Carcassone
         }
 
 
-
-
-
-
         private void gombClick(object sender, RoutedEventArgs e)
         {
 
@@ -121,7 +122,6 @@ namespace Carcassone
             }
 
 
-            //     this.gameGrid.Children.Add(can);
 
         }
 
@@ -254,36 +254,6 @@ namespace Carcassone
         }
     }
 
-    public class Cards
-    {
-        char left;
-        char right;
-        char top;
-        char bottom;
-        char center;
-        string bgImage;
-
-        public Cards(char left, char right, char top, char bottom, char center)
-        {
-            this.left = left;
-            this.right = right;
-            this.top = top;
-            this.bottom = bottom;
-            this.center = center;
-            //   this.bgImage = left.ToString() +  top.ToString() + right.ToString() + bottom.ToString() + "_" + center.ToString()+".png";
-        }
-
-        public char Left { get => left; }
-        public char Right { get => right; }
-        public char Top { get => top; }
-        public char Bottom { get => bottom; }
-        public char Center { get => center; }
-        public string BgImage { get => bgImage; }
-
-        public void Rotate(Cards card, bool direction) //direction = True => Jobbra forgatás,		direction = False => Balra forgatás.
-        {
-            //todo Rotate függvény megírása
-        }
-    }
+   
 
 }

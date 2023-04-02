@@ -85,7 +85,7 @@
 
 
 
-            <Button x:Name="RotateRight" Style="{StaticResource ButtonStyleHover}" Grid.Column="10" Grid.Row="3" HorizontalAlignment="Right" Margin="10 10 45 10" Background="Transparent" BorderBrush="Transparent" Click="RotateRight_Click_1">
+            <Button x:Name="RotateRight" Style="{StaticResource ButtonStyleHover}" Grid.Column="10" Grid.Row="3" HorizontalAlignment="Right" Margin="10 10 45 10" Background="Transparent" BorderBrush="Transparent" Click="RotateRight_Click_1" Cursor="Hand">
                 <Image Source=".\img\RotateRight.png">
                     <Image.Effect>
                         <DropShadowEffect/>
@@ -93,7 +93,7 @@
                 </Image>
             </Button>
 
-            <Button x:Name="RotateLeft" Style="{StaticResource ButtonStyleHover}" Grid.Column="10" Grid.Row="3" HorizontalAlignment="Left" Margin="45 10 10 10" Background="Transparent" BorderBrush="Transparent" Click="RotateLeft_Click">
+            <Button x:Name="RotateLeft" Style="{StaticResource ButtonStyleHover}" Grid.Column="10" Grid.Row="3" HorizontalAlignment="Left" Margin="45 10 10 10" Background="Transparent" BorderBrush="Transparent" Click="RotateLeft_Click" Cursor="Hand">
                 <Image Source=".\img\RotateLeft.png">
                     <Image.Effect>
                         <DropShadowEffect/>

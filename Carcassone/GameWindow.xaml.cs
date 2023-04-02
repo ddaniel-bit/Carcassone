@@ -31,7 +31,9 @@ namespace Carcassone
 
         Uri hoversound = new Uri("hoversound.mp3", UriKind.RelativeOrAbsolute);
         MediaPlayer hoverplayer = new MediaPlayer();
-
+        
+        LinearGradientBrush GradientColor1 = new LinearGradientBrush();
+        LinearGradientBrush GradientColor2 = new LinearGradientBrush();
 
         public GameWindow()
         {
@@ -54,6 +56,21 @@ namespace Carcassone
 
         private void BetoltGombokat()
         {
+            //szinek
+            GradientColor1.StartPoint = new Point(0.5, 0);
+            GradientColor1.EndPoint = new Point(0.5, 1);
+            GradientColor1.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 0.0));
+            GradientColor1.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 1.0));
+
+            GradientColor2.StartPoint = new Point(0.5, 0);
+            GradientColor2.EndPoint = new Point(0.5, 1);
+            GradientColor2.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 0.0));
+            GradientColor2.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 1.0));
+
             for (int sorIndex = 0; sorIndex < 5; sorIndex++)
             {
                 for (int oszlopIndex = 0; oszlopIndex < 8; oszlopIndex++)
@@ -62,6 +79,18 @@ namespace Carcassone
                     //ujgomb.Background = Brushes.Transparent;
                     ujgomb.Opacity = 0.2;
                     ujgomb.Cursor = Cursors.Hand;
+
+                    
+
+                    if (oszlopIndex % 2==0)
+                    {
+                        ujgomb.Background = GradientColor1; 
+                    }
+                    else
+                    {
+                        ujgomb.Background = GradientColor2;
+                    }
+                     
                     ujgomb.Name = "btn" + sorIndex.ToString() + "_" + oszlopIndex.ToString();
                     ujgomb.Click += gombClick;
                     Grid.SetRow(ujgomb, sorIndex + 1);
@@ -104,7 +133,7 @@ namespace Carcassone
             //      MessageBox.Show(oszlop.ToString());
 
 
-            if (b.Background.ToString() == "#FFDDDDDD" && SzabalyosLerakas(b, sor, oszlop))
+            if ((b.Background == GradientColor1|| b.Background == GradientColor2) && SzabalyosLerakas(b, sor, oszlop))
             {
                 Style Temp;
                 Temp = (Style)this.FindResource("ButtonStyleHover");

@@ -41,11 +41,7 @@ namespace Carcassone
             UrikTaroloFeltoltes();
             BetoltGombokat();
             LapValasztas();
-
-            Cards proba = new Cards(filePaths[7]);
-            proba.Info();
-            proba.Rotate(false);
-            proba.Info();
+            
         }
 
         private void LapValasztas()
@@ -133,7 +129,7 @@ namespace Carcassone
             //      MessageBox.Show(oszlop.ToString());
 
 
-            if ((b.Background == GradientColor1|| b.Background == GradientColor2) && SzabalyosLerakas(b, sor, oszlop))
+            if ((b.Background == GradientColor1|| b.Background == GradientColor2) && SzabalyosLerakas(sor, oszlop))
             {
                 Style Temp;
                 Temp = (Style)this.FindResource("ButtonStyleHover");
@@ -149,14 +145,63 @@ namespace Carcassone
 
                 //       MessageBox.Show(UrikTarolva[sor -1, oszlop - 1][14].ToString());
                 LapValasztas();
-
+                string randomlaperedeti = randomlap;
+                if (JatekVege())
+                {
+                    randomlap = @".\img\kartyak\" + randomlap[17] + randomlap[14] + randomlap[15] + randomlap[16] + randomlap[18] + randomlap[19] + ".png";
+                    if (JatekVege())
+                    {
+                        randomlap = @".\img\kartyak\" + randomlap[16] + randomlap[17] + randomlap[14] + randomlap[15] + randomlap[18] + randomlap[19] + ".png";
+                        if (JatekVege())
+                        {
+                            randomlap = @".\img\kartyak\" + randomlap[15] + randomlap[16] + randomlap[17] + randomlap[14] + randomlap[18] + randomlap[19] + ".png";
+                            if (JatekVege())
+                            {
+                                MessageBox.Show("Na en veled nem jatszok.");
+                            }
+                        }
+                    }
+                }
+                randomlap = randomlaperedeti;
             }
 
 
 
         }
 
-        private bool SzabalyosLerakas(Button btn, int sor, int oszlop)
+        private bool JatekVege()
+        {
+            List<string> uresmezoktarolo = new List<string>();
+            for (int sorIndex = 0; sorIndex < UrikTarolva.GetLength(0); sorIndex++)
+            {
+                for (int oszlopIndex = 0; oszlopIndex < UrikTarolva.GetLength(1); oszlopIndex++)
+                {
+                    if (UrikTarolva[sorIndex, oszlopIndex] == "")
+                    {
+                        uresmezoktarolo.Add(sorIndex + "," + oszlopIndex);
+                    }
+                }
+
+            }
+
+            foreach (var item in uresmezoktarolo)
+            {
+                string[] tomb = item.Split(',');
+
+                int sor = int.Parse(tomb[0]);
+                int oszlop = int.Parse(tomb[1]);
+
+                if (SzabalyosLerakas(sor+1, oszlop+1))
+                {
+                    return false;
+                }
+
+            }
+            return true;
+
+        }
+
+        private bool SzabalyosLerakas(int sor, int oszlop)
         {
 
             bool szabalyos = false;
@@ -257,37 +302,7 @@ namespace Carcassone
 
         }
 
-        private bool Asd()
-        {
-            List<string> uresmezoktarolo = new List<string>();
-            for (int sorIndex = 0; sorIndex < UrikTarolva.GetLength(0); sorIndex++)
-            {
-                for (int oszlopIndex = 0; oszlopIndex < UrikTarolva.GetLength(1); oszlopIndex++)
-                {
-                    if (UrikTarolva[sorIndex, oszlopIndex] == "")
-                    {
-                        uresmezoktarolo.Add(sorIndex + "," + oszlopIndex);
-                    }
-                }
-
-            }
-
-            foreach (var item in uresmezoktarolo)
-            {
-                string[] tomb = item.Split(',');
-               // MessageBox.Show(tomb.ToString());
-                int sor = int.Parse(tomb[0]);
-                int oszlop = int.Parse(tomb[0]);
-
-                if (SzabalyosLerakas(sor+1, oszlop+1))
-                {
-                    return false;
-                }
-
-            }
-            return true;
-
-        }
+        
 
 
 

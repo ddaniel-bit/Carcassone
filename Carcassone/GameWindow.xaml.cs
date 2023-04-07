@@ -31,7 +31,7 @@ namespace Carcassone
 
         Uri hoversound = new Uri("hoversound.mp3", UriKind.RelativeOrAbsolute);
         MediaPlayer hoverplayer = new MediaPlayer();
-        
+
         LinearGradientBrush GradientColor1 = new LinearGradientBrush();
         LinearGradientBrush GradientColor2 = new LinearGradientBrush();
 
@@ -41,7 +41,7 @@ namespace Carcassone
             UrikTaroloFeltoltes();
             BetoltGombokat();
             LapValasztas();
-            
+
         }
 
         private void LapValasztas()
@@ -76,17 +76,17 @@ namespace Carcassone
                     ujgomb.Opacity = 0.2;
                     ujgomb.Cursor = Cursors.Hand;
 
-                    
 
-                    if (oszlopIndex % 2==0)
+
+                    if (oszlopIndex % 2 == 0)
                     {
-                        ujgomb.Background = GradientColor1; 
+                        ujgomb.Background = GradientColor1;
                     }
                     else
                     {
                         ujgomb.Background = GradientColor2;
                     }
-                     
+
                     ujgomb.Name = "btn" + sorIndex.ToString() + "_" + oszlopIndex.ToString();
                     ujgomb.Click += gombClick;
                     Grid.SetRow(ujgomb, sorIndex + 1);
@@ -129,7 +129,7 @@ namespace Carcassone
             //      MessageBox.Show(oszlop.ToString());
 
 
-            if ((b.Background == GradientColor1|| b.Background == GradientColor2) && SzabalyosLerakas(sor, oszlop))
+            if ((b.Background == GradientColor1 || b.Background == GradientColor2) && SzabalyosLerakas(sor, oszlop))
             {
                 Style Temp;
                 Temp = (Style)this.FindResource("ButtonStyleHover");
@@ -158,6 +158,7 @@ namespace Carcassone
                             if (JatekVege())
                             {
                                 MessageBox.Show("Na en veled nem jatszok.");
+                                Pontozas();
                             }
                         }
                     }
@@ -191,7 +192,7 @@ namespace Carcassone
                 int sor = int.Parse(tomb[0]);
                 int oszlop = int.Parse(tomb[1]);
 
-                if (SzabalyosLerakas(sor+1, oszlop+1))
+                if (SzabalyosLerakas(sor + 1, oszlop + 1))
                 {
                     return false;
                 }
@@ -302,8 +303,69 @@ namespace Carcassone
 
         }
 
-        
 
+        private int Pontozas()
+        {
+            //megkeresi az összes kolostort és egyenként pontoz
+            int osszpont = 0;
+            for (int sorIndex = 0; sorIndex < 5; sorIndex++)
+            {
+                for (int oszlopIndex = 0; oszlopIndex < 8; oszlopIndex++)
+                {
+                    if (UrikTarolva[sorIndex, oszlopIndex] != "")
+                    {
+                        int kolostorpont = 0; //a kolostorokból kapott pontok
+                        string holvan = "";
+                        if (UrikTarolva[sorIndex, oszlopIndex][19] == 'k')
+                        {
+                            if (sorIndex != 4 && oszlopIndex != 7 && UrikTarolva[sorIndex + 1, oszlopIndex + 1] != "")
+                            {
+                                kolostorpont++;
+                                holvan += "(+1 +1) ";
+                            }
+                            if (sorIndex != 0 && oszlopIndex != 0 && UrikTarolva[sorIndex - 1, oszlopIndex - 1] != "")
+                            {
+                                kolostorpont++;
+                                holvan += "(-1 -1) ";
+                            }
+                            if (sorIndex != 4 && oszlopIndex != 0 && UrikTarolva[sorIndex + 1, oszlopIndex -1 ] != "")
+                            {
+                                kolostorpont++;
+                                holvan += "(+1 -1) ";
+                            }
+                            if (sorIndex != 0 && oszlopIndex != 7 && UrikTarolva[sorIndex - 1, oszlopIndex + 1] != "")
+                            {
+                                kolostorpont++;
+                                holvan += "(-1 +1) ";
+                            }
+                            if (sorIndex != 4 && UrikTarolva[sorIndex + 1, oszlopIndex] != "")
+                            {
+                                kolostorpont++;
+                                holvan += "(+1 0) ";
+                            }
+                            if (sorIndex != 0 && UrikTarolva[sorIndex - 1, oszlopIndex] != "")
+                            {
+                                kolostorpont++;
+                                holvan += "(-1 0) ";
+                            }
+                            if (oszlopIndex != 7 && UrikTarolva[sorIndex, oszlopIndex + 1] != "")
+                            {
+                                kolostorpont++;
+                                holvan += "(0 +1) ";
+                            }
+                            if (oszlopIndex != 0 && UrikTarolva[sorIndex, oszlopIndex - 1] != "")
+                            {
+                                kolostorpont++;
+                                holvan += "(0 -1) ";
+                            }
+                            osszpont += kolostorpont;
+                            MessageBox.Show("A " + sorIndex + "," + oszlopIndex+" kolostorral ennyi pontot szereztél: " + kolostorpont + " Ezekért kaptál pontot: "+holvan);
+                        }
+                    }
+                }
+            }
+            return osszpont;
+        }
 
 
 
@@ -347,6 +409,6 @@ namespace Carcassone
         }
     }
 
-   
+
 
 }

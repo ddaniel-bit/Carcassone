@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Carcassone"
   ],
-  "SelectedNode": "\\C:\\Users\\Tamás\\Source\\Repos\\Carcassone",
+  "SelectedNode": "\\Carcassone\\GameWindow.xaml",
   "PreviewInSolutionExplorer": false
 }

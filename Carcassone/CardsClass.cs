@@ -35,7 +35,7 @@ namespace Carcassone
         public string BgImage { get => bgImage; }
         public void Info()
         {
-            MessageBox.Show($"{left}, {top}, {right}, {bottom}, {center}, {bgImage}");
+//            MessageBox.Show($"{left}, {top}, {right}, {bottom}, {center}, {bgImage}");
         }
 
         public void Rotate(bool direction) //direction = True => Jobbra forgatás,		direction = False => Balra forgatás.

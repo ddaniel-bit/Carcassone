@@ -12,27 +12,64 @@
     <None Remove="img\background_game.jpg" />
     <None Remove="img\kartyak\rrrr_k.png" />
     <None Remove="img\kartyak\rrru_k.png" />
+    <None Remove="img\kartyak\rrrv_r.png" />
+    <None Remove="img\kartyak\rrur_k.png" />
+    <None Remove="img\kartyak\rruu_u.png" />
+    <None Remove="img\kartyak\rrvr_r.png" />
+    <None Remove="img\kartyak\rrvv_r.png" />
+    <None Remove="img\kartyak\rurr_k.png" />
+    <None Remove="img\kartyak\ruru_u.png" />
+    <None Remove="img\kartyak\ruur_u.png" />
+    <None Remove="img\kartyak\ruuu_u.png" />
+    <None Remove="img\kartyak\ruuv_u.png" />
+    <None Remove="img\kartyak\ruvu_u.png" />
     <None Remove="img\kartyak\rvrr_r.png" />
     <None Remove="img\kartyak\rvrv_r.png" />
     <None Remove="img\kartyak\rvuu_u.png" />
     <None Remove="img\kartyak\rvvr_c.png" />
     <None Remove="img\kartyak\rvvr_r.png" />
+    <None Remove="img\kartyak\rvvv_v.png" />
+    <None Remove="img\kartyak\urrr_k.png" />
     <None Remove="img\kartyak\urru_u.png" />
     <None Remove="img\kartyak\urur_u.png" />
     <None Remove="img\kartyak\uruu_u.png" />
+    <None Remove="img\kartyak\uruv_u.png" />
+    <None Remove="img\kartyak\uurr_u.png" />
+    <None Remove="img\kartyak\uuru_u.png" />
+    <None Remove="img\kartyak\uuur_u.png" />
     <None Remove="img\kartyak\uuuu_u.png" />
+    <None Remove="img\kartyak\uuuv_u.png" />
+    <None Remove="img\kartyak\uuvr_u.png" />
+    <None Remove="img\kartyak\uuvu_u.png" />
+    <None Remove="img\kartyak\uuvv_u.png" />
     <None Remove="img\kartyak\uvru_u.png" />
     <None Remove="img\kartyak\uvur_u.png" />
     <None Remove="img\kartyak\uvuu_u.png" />
     <None Remove="img\kartyak\uvvu_c.png" />
     <None Remove="img\kartyak\uvvu_u.png" />
+    <None Remove="img\kartyak\uvvv_v.png" />
+    <None Remove="img\kartyak\vrrr_r.png" />
+    <None Remove="img\kartyak\vrrv_r.png" />
+    <None Remove="img\kartyak\vruu_u.png" />
     <None Remove="img\kartyak\vrvr_c.png" />
     <None Remove="img\kartyak\vrvr_v.png" />
+    <None Remove="img\kartyak\vrvv_v.png" />
+    <None Remove="img\kartyak\vuru_u.png" />
+    <None Remove="img\kartyak\vuuu_u.png" />
+    <None Remove="img\kartyak\vuuv_u.png" />
+    <None Remove="img\kartyak\vuvv_v.png" />
+    <None Remove="img\kartyak\vvrr_r.png" />
+    <None Remove="img\kartyak\vvrv_v.png" />
+    <None Remove="img\kartyak\vvuu_u.png" />
+    <None Remove="img\kartyak\vvuv_u.png" />
+    <None Remove="img\kartyak\vvuv_v.png" />
     <None Remove="img\kartyak\vvvr_c.png" />
     <None Remove="img\kartyak\vvvr_v.png" />
     <None Remove="img\kartyak\vvvu_c.png" />
     <None Remove="img\kartyak\vvvu_v.png" />
     <None Remove="img\kartyak\vvvv_c.png" />
+    <None Remove="img\RotateLeft.png" />
+    <None Remove="img\RotateRight.png" />
     <None Remove="img\tren.png" />
     <None Remove="rrrr_k.png" />
     <None Remove="test.ico" />
@@ -54,19 +91,52 @@
     <Resource Include="img\kartyak\rrru_k.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\kartyak\rvrr_r.png">
+    <Resource Include="img\kartyak\rrrv_r.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\kartyak\rvrv_r.png">
+    <Resource Include="img\kartyak\rrur_k.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\rruu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\rrvr_r.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\rrvv_r.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\rurr_k.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\ruru_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\ruur_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\ruuu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\ruuv_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\ruvu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\rvrr_r.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\kartyak\rvuu_u.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\kartyak\rvvr_c.png">
+    <Resource Include="img\kartyak\rvvr_r.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\kartyak\rvvr_r.png">
+    <Resource Include="img\kartyak\rvvv_v.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\urrr_k.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\kartyak\urru_u.png">
@@ -78,7 +148,31 @@
     <Resource Include="img\kartyak\uruu_u.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="img\kartyak\uruv_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uurr_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uuru_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uuur_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="img\kartyak\uuuu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uuuv_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uuvr_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uuvu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uuvv_u.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\kartyak\uvru_u.png">
@@ -90,31 +184,58 @@
     <Resource Include="img\kartyak\uvuu_u.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\kartyak\uvvu_c.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="img\kartyak\uvvu_u.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\kartyak\vrvr_c.png">
+    <Resource Include="img\kartyak\uvvv_v.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\kartyak\vrvr_v.png">
+    <Resource Include="img\kartyak\vrrr_r.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\kartyak\vvvr_c.png">
+    <Resource Include="img\kartyak\vrrv_r.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vruu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vrvv_v.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vuru_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vuuu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vuuv_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vuvv_v.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vvrr_r.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vvrv_v.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vvuu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vvuv_v.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\kartyak\vvvr_v.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\kartyak\vvvu_c.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="img\kartyak\vvvu_v.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img\kartyak\vvvv_c.png">
+    <Resource Include="img\RotateLeft.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\RotateRight.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\tren.png">

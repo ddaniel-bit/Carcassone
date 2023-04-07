@@ -50,7 +50,7 @@ namespace Carcassone
 
         private void LapValasztas()
         {
-            randomlap = filePaths[vel.Next(23)];
+            randomlap = filePaths[vel.Next(49)];
             preview.Source = new BitmapImage(new Uri(@$"{randomlap}", UriKind.Relative));
         }
 
@@ -257,6 +257,39 @@ namespace Carcassone
 
         }
 
+        private bool Asd()
+        {
+            List<string> uresmezoktarolo = new List<string>();
+            for (int sorIndex = 0; sorIndex < UrikTarolva.GetLength(0); sorIndex++)
+            {
+                for (int oszlopIndex = 0; oszlopIndex < UrikTarolva.GetLength(1); oszlopIndex++)
+                {
+                    if (UrikTarolva[sorIndex, oszlopIndex] == "")
+                    {
+                        uresmezoktarolo.Add(sorIndex + "," + oszlopIndex);
+                    }
+                }
+
+            }
+
+            foreach (var item in uresmezoktarolo)
+            {
+                string[] tomb = item.Split(',');
+               // MessageBox.Show(tomb.ToString());
+                int sor = int.Parse(tomb[0]);
+                int oszlop = int.Parse(tomb[0]);
+
+                if (SzabalyosLerakas(sor+1, oszlop+1))
+                {
+                    return false;
+                }
+
+            }
+            return true;
+
+        }
+
+
 
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -287,11 +320,15 @@ namespace Carcassone
         private void RotateRight_Click_1(object sender, RoutedEventArgs e)
         {
 
+            randomlap = @".\img\kartyak\" + randomlap[17] + randomlap[14] + randomlap[15] + randomlap[16] + randomlap[18] + randomlap[19] + ".png";
+            preview.Source = new BitmapImage(new Uri(@$"{randomlap}", UriKind.Relative));
+            //14,15,16,17_19
         }
 
         private void RotateLeft_Click(object sender, RoutedEventArgs e)
         {
-
+            randomlap = @".\img\kartyak\" + randomlap[15] + randomlap[16] + randomlap[17] + randomlap[14] + randomlap[18] + randomlap[19] + ".png";
+            preview.Source = new BitmapImage(new Uri(@$"{randomlap}", UriKind.Relative));
         }
     }
 

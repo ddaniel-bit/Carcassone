@@ -26,6 +26,7 @@ namespace Carcassone
         Random vel = new Random();
         string[] filePaths = Directory.GetFiles(@".\img\kartyak\", "*.png", SearchOption.TopDirectoryOnly);
         string randomlap;
+        bool elsolape = true;
         string[,] UrikTarolva = new string[5, 8];
 
 
@@ -208,14 +209,14 @@ namespace Carcassone
             bool szabalyos = false;
             if (UrikTarolva[sor - 1, oszlop - 1] == "")
             {
-
-                if (sor != 1 && sor != 5 && oszlop != 1 && oszlop != 8 &&
+                if (elsolape && sor != 1 && sor != 5 && oszlop != 1 && oszlop != 8 &&
                     UrikTarolva[sor - 1, oszlop - 2].ToString() == ""
                 && UrikTarolva[sor - 1, oszlop].ToString() == ""
                 && UrikTarolva[sor - 2, oszlop - 1].ToString() == ""
                 && UrikTarolva[sor, oszlop - 1].ToString() == "") // azt vizsgálja, hogy az első letett kártya-e
                 {
                     szabalyos = true;
+                    elsolape = false;
                 }
                 else
                 {
@@ -286,7 +287,7 @@ namespace Carcassone
                     }
 
 
-                    if (!szabalyos_ell.Contains("1"))
+                    if (!szabalyos_ell.Contains("1") && vizsg != "")
                     {
                         szabalyos = true;
                     }
@@ -364,6 +365,8 @@ namespace Carcassone
                     }
                 }
             }
+            //utakat pontozza
+
             return osszpont;
         }
 

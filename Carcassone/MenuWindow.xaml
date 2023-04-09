@@ -1,0 +1,198 @@
+﻿<Window x:Class="Carcassone.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Carcassone"
+        mc:Ignorable="d"
+        Height="720" Width="1280" Title="Carcassone"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown"
+        Icon="/img/icon.ico">
+    <Border CornerRadius="25">
+        <Border.Background>
+            <ImageBrush ImageSource="\img\menubg.jpg"/>
+        </Border.Background>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+
+            <StackPanel HorizontalAlignment="Right" Grid.Column="2">
+                <Button Style="{DynamicResource ButtonStyleHover}"
+                    x:Name="btnTalcaraTesz"
+                    Background="Transparent"
+                    Content="-"
+                    FontSize="50"
+                    Cursor="Hand"
+                    BorderBrush="Transparent"
+                    Click="btnTalcaraTesz_Click"
+                    Margin="0 -15 15 0"
+                    Height="50">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+
+                    <Button.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE55C"/>
+                            <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Foreground>
+
+                </Button>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                <Button  x:Name="btnKi" Content=">"
+                         Click="btnKi_Click"
+                         Background="Transparent"
+                         BorderBrush="Transparent"
+                         Style="{DynamicResource ButtonStyleHover}"
+                         RenderTransformOrigin="0.5,0.5"
+                         FontSize="24"
+                         Height="40"
+                         Width="25"
+                         FontFamily="Algerian"
+                         Cursor="Hand">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE55C"/>
+                            <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Foreground>
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
+
+                <Label Content="Zene:"
+                       VerticalAlignment="Center"
+                       FontSize="24"
+                       FontFamily="Algerian">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE55C"/>
+                            <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                    <Label.Effect>
+                        <DropShadowEffect/>
+                    </Label.Effect>
+
+                </Label>
+
+                <Label x:Name="lbZene"
+                       Content="Be"
+                       VerticalAlignment="Center"
+                       FontSize="24"
+                       FontFamily="Algerian">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE55C"/>
+                            <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                    <Label.Effect>
+                        <DropShadowEffect/>
+                    </Label.Effect>
+                </Label>
+
+                <Button x:Name="btnBe"
+                        Content=">"
+                        Click="btnBe_Click"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Style="{DynamicResource ButtonStyleHover}"
+                        Height="40"
+                        FontSize="24"
+                        Width="25"
+                        FontFamily="Algerian"
+                        Opacity="0.5"
+                        Cursor="Hand">
+                    <Button.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE55C"/>
+                            <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Foreground>
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                </Button>
+            </StackPanel>
+
+
+
+
+
+
+
+
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+                
+                <Label Content="Zene Hangereje:"
+                       VerticalAlignment="Center"
+                       FontSize="24"
+                       FontFamily="Algerian">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE55C"/>
+                            <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                    <Label.Effect>
+                        <DropShadowEffect/>
+                    </Label.Effect>
+
+                </Label>
+
+
+                <Slider Style="{DynamicResource SliderStyle1}" IsSelectionRangeEnabled="True" SelectionStart="0" SelectionEnd="100" Cursor="Hand">
+                    <Slider.Resources>
+                        <LinearGradientBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" EndPoint="1,0.5" StartPoint="0,0.5">
+                            <GradientStop Color="#FFE55C" Offset="1"/>
+                            <GradientStop Color="#B5634A" Offset="0"/>
+                        </LinearGradientBrush>
+                    </Slider.Resources>
+
+                </Slider>
+                
+                
+                </StackPanel>
+            </Grid>
+    </Border>
+</Window>

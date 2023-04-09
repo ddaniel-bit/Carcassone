@@ -86,7 +86,7 @@
 
 
             <Button x:Name="RotateRight" Style="{StaticResource ButtonStyleHover}" Grid.Column="10" Grid.Row="3" HorizontalAlignment="Right" Margin="10 10 45 10" Background="Transparent" BorderBrush="Transparent" Click="RotateRight_Click_1" Cursor="Hand">
-                <Image Source="\img\RotateRight.png">
+                <Image x:Name="imgRotateRight" Source="\img\RotateRight.png">
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
@@ -94,11 +94,60 @@
             </Button>
 
             <Button x:Name="RotateLeft" Style="{StaticResource ButtonStyleHover}" Grid.Column="10" Grid.Row="3" HorizontalAlignment="Left" Margin="45 10 10 10" Background="Transparent" BorderBrush="Transparent" Click="RotateLeft_Click" Cursor="Hand">
-                <Image Source="\img\RotateLeft.png">
+                <Image x:Name="imgRotateLeft" Source="\img\RotateLeft.png">
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
+            </Button>
+
+
+
+            <TextBlock Grid.Column="10"
+                   Grid.Row="4"
+                   FontFamily="Algerian"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="25"
+                   TextAlignment="Center"
+                   Opacity="1">
+                <TextBlock.Effect>
+                    <DropShadowEffect/>
+                </TextBlock.Effect>
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE55C"/>
+                        <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+                Nincs több <LineBreak/>  lehetöséged  lapot<LineBreak/> elhelyzeni!
+            </TextBlock>
+
+
+
+            <Button x:Name="btnKiertekeles" Style="{StaticResource ButtonStyleHover}"
+                    Grid.Column="10"
+                    Grid.Row="5"
+                    HorizontalAlignment="Center"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Content="Kattints a kiértékeléshez"
+                    Cursor="Hand"
+                    FontSize="20"
+                    FontFamily="Algerian"
+                    Height="25" Click="btnKiertekeles_Click" MouseEnter="btnKiertekeles_MouseEnter" MouseLeave="btnKiertekeles_MouseLeave">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE55C"/>
+                        <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
             </Button>
 
         </Grid>

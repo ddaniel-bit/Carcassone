@@ -94,7 +94,7 @@
                     BorderBrush="Transparent"
                     MouseEnter="btnSettings_MouseEnter"
                     MouseLeave="btnSettings_MouseLeave"
-                    Cursor="Hand">
+                    Cursor="Hand" Click="btnSettings_Click">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>

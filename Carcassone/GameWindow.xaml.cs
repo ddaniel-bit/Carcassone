@@ -9,6 +9,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Documents.DocumentStructures;
 using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Media;
@@ -47,7 +48,7 @@ namespace Carcassone
 
         private void LapValasztas()
         {
-            randomlap = filePaths[vel.Next(49)];
+            randomlap = filePaths[vel.Next(50)];
             preview.Source = new BitmapImage(new Uri(@$"{randomlap}", UriKind.Relative));
         }
 
@@ -146,8 +147,24 @@ namespace Carcassone
 
                 //       MessageBox.Show(UrikTarolva[sor -1, oszlop - 1][14].ToString());
                 LapValasztas();
+                string vaneures = "0";
+                for (int sorIndex = 0; sorIndex < 5; sorIndex++)
+                {
+                    for (int oszlopIndex = 0; oszlopIndex < 8; oszlopIndex++)
+                    {
+                        if (UrikTarolva[sorIndex, oszlopIndex] == "")
+                        {
+                            vaneures += "1";
+                        }
+                    }
+                }
                 string randomlaperedeti = randomlap;
-                if (JatekVege())
+                if (!vaneures.Contains("1"))
+                {
+                    int[] pontok = Pontozas(true);
+                    MessageBox.Show("Ennyi pontot kaptál összesen: " + Convert.ToString(pontok[0] + pontok[1] + pontok[2] + pontok[3]) + ". Kolostorokból: " + Convert.ToString(pontok[0]) + " Városokból: " + Convert.ToString(pontok[1]) + " Utakból: " + Convert.ToString(pontok[2]) + " Pluszpontokból: " + pontok[3]);
+                }
+                else if (JatekVege())
                 {
                     randomlap = @".\img\kartyak\" + randomlap[17] + randomlap[14] + randomlap[15] + randomlap[16] + randomlap[18] + randomlap[19] + ".png";
                     if (JatekVege())
@@ -159,7 +176,8 @@ namespace Carcassone
                             if (JatekVege())
                             {
                                 MessageBox.Show("Na en veled nem jatszok.");
-                                Pontozas();
+                                int[] pontok = Pontozas(false);
+                                MessageBox.Show("Ennyi pontot kaptál összesen: " + Convert.ToString(pontok[0] + pontok[1] + pontok[2] + pontok[3]) + ". Kolostorokból: " + Convert.ToString(pontok[0]) + " Városokból: " + Convert.ToString(pontok[1]) + " Utakból: " + Convert.ToString(pontok[2]) + " Pluszpontokból: " + pontok[3]);
                             }
                         }
                     }
@@ -305,69 +323,101 @@ namespace Carcassone
         }
 
 
-        private int Pontozas()
+        private int[] Pontozas(bool betelte)
         {
+            int[] kvub_pontok = new int[4];
             //megkeresi az összes kolostort és egyenként pontoz
-            int osszpont = 0;
+            int kolostorpont = 0; //a kolostorokból kapott pontok
             for (int sorIndex = 0; sorIndex < 5; sorIndex++)
             {
                 for (int oszlopIndex = 0; oszlopIndex < 8; oszlopIndex++)
                 {
                     if (UrikTarolva[sorIndex, oszlopIndex] != "")
                     {
-                        int kolostorpont = 0; //a kolostorokból kapott pontok
-                        string holvan = "";
                         if (UrikTarolva[sorIndex, oszlopIndex][19] == 'k')
                         {
                             if (sorIndex != 4 && oszlopIndex != 7 && UrikTarolva[sorIndex + 1, oszlopIndex + 1] != "")
                             {
                                 kolostorpont++;
-                                holvan += "(+1 +1) ";
                             }
                             if (sorIndex != 0 && oszlopIndex != 0 && UrikTarolva[sorIndex - 1, oszlopIndex - 1] != "")
                             {
                                 kolostorpont++;
-                                holvan += "(-1 -1) ";
                             }
-                            if (sorIndex != 4 && oszlopIndex != 0 && UrikTarolva[sorIndex + 1, oszlopIndex -1 ] != "")
+                            if (sorIndex != 4 && oszlopIndex != 0 && UrikTarolva[sorIndex + 1, oszlopIndex - 1] != "")
                             {
                                 kolostorpont++;
-                                holvan += "(+1 -1) ";
                             }
                             if (sorIndex != 0 && oszlopIndex != 7 && UrikTarolva[sorIndex - 1, oszlopIndex + 1] != "")
                             {
                                 kolostorpont++;
-                                holvan += "(-1 +1) ";
                             }
                             if (sorIndex != 4 && UrikTarolva[sorIndex + 1, oszlopIndex] != "")
                             {
                                 kolostorpont++;
-                                holvan += "(+1 0) ";
                             }
                             if (sorIndex != 0 && UrikTarolva[sorIndex - 1, oszlopIndex] != "")
                             {
                                 kolostorpont++;
-                                holvan += "(-1 0) ";
                             }
                             if (oszlopIndex != 7 && UrikTarolva[sorIndex, oszlopIndex + 1] != "")
                             {
                                 kolostorpont++;
-                                holvan += "(0 +1) ";
                             }
                             if (oszlopIndex != 0 && UrikTarolva[sorIndex, oszlopIndex - 1] != "")
                             {
                                 kolostorpont++;
-                                holvan += "(0 -1) ";
-                            }
-                            osszpont += kolostorpont;
-                            MessageBox.Show("A " + sorIndex + "," + oszlopIndex+" kolostorral ennyi pontot szereztél: " + kolostorpont + " Ezekért kaptál pontot: "+holvan);
+                            };
                         }
                     }
                 }
             }
-            //utakat pontozza
 
-            return osszpont;
+            //varosok pontozasa
+            int varospont = 0; //a városokból kapott pontok
+            for (int sorIndex = 0; sorIndex < 5; sorIndex++)
+            {
+                for (int oszlopIndex = 0; oszlopIndex < 8; oszlopIndex++)
+                {
+                    if (UrikTarolva[sorIndex, oszlopIndex] != "")
+                    {
+
+                        if (UrikTarolva[sorIndex, oszlopIndex].Substring(14, 4).Contains("v"))
+                        {
+                            varospont += 2;
+                        };
+                    }
+                }
+            }
+
+            //varosok pontozasa
+            int utpont = 0; //az utakból kapott pontok
+            for (int sorIndex = 0; sorIndex < 5; sorIndex++)
+            {
+                for (int oszlopIndex = 0; oszlopIndex < 8; oszlopIndex++)
+                {
+                    if (UrikTarolva[sorIndex, oszlopIndex] != "")
+                    {
+
+                        if (UrikTarolva[sorIndex, oszlopIndex].Substring(14, 4).Contains("u"))
+                        {
+                            utpont += 1;
+                        }
+                    }
+                }
+            }
+
+            //ha betelt a terület hozzáad +10 pontot
+            int pluszpont = 0;
+            if (betelte)
+            {
+                pluszpont = +10;
+            }
+            kvub_pontok[0] = kolostorpont;
+            kvub_pontok[1] = varospont;
+            kvub_pontok[2] = utpont;
+            kvub_pontok[3] = pluszpont;
+            return kvub_pontok;
         }
 
 
@@ -410,8 +460,49 @@ namespace Carcassone
             randomlap = @".\img\kartyak\" + randomlap[15] + randomlap[16] + randomlap[17] + randomlap[14] + randomlap[18] + randomlap[19] + ".png";
             preview.Source = new BitmapImage(new Uri(@$"{randomlap}", UriKind.Relative));
         }
+
+        private void btnKiertekeles_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnKiertekeles_MouseEnter(object sender, MouseEventArgs e)
+        {
+            btnKiertekeles.Foreground = MouseEnterColor();
+        }
+
+        private void btnKiertekeles_MouseLeave(object sender, MouseEventArgs e)
+        {
+            btnKiertekeles.Foreground = MouseLeaveColor();
+        }
+
+        private static LinearGradientBrush MouseEnterColor()
+        {
+            LinearGradientBrush myVerticalGradient = new LinearGradientBrush();
+            myVerticalGradient.StartPoint = new Point(0.5, 0);
+            myVerticalGradient.EndPoint = new Point(0.5, 1);
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 0.0));
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 1.0));
+            return myVerticalGradient;
+        }
+
+        private static LinearGradientBrush MouseLeaveColor()
+        {
+            LinearGradientBrush myVerticalGradient = new LinearGradientBrush();
+            myVerticalGradient.StartPoint = new Point(0.5, 0);
+            myVerticalGradient.EndPoint = new Point(0.5, 1);
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 0.0));
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 1.0));
+            return myVerticalGradient;
+        }
+
+
+
+
     }
-
-
-
 }
+

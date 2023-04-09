@@ -40,6 +40,7 @@ namespace Carcassone
         }
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
+            musicplayer.Stop();
             GameWindow openGame = new GameWindow();
             openGame.Show();
             this.Close();
@@ -120,7 +121,10 @@ namespace Carcassone
 
         private void btnSettings_Click(object sender, RoutedEventArgs e)
         {
-            
+            musicplayer.Stop();
+            MenuWindow openMenu = new MenuWindow();
+            openMenu.Show();
+            this.Close();
         }
 
         public void PlaybackMusic()
@@ -129,7 +133,7 @@ namespace Carcassone
             {
                 musicplayer.Open(new Uri("MainWindowMusic.mp3", UriKind.RelativeOrAbsolute));
                 musicplayer.MediaEnded += new EventHandler(Media_Ended);
-                musicplayer.Volume = 0.1;
+                musicplayer.Volume = 0.3;
                 musicplayer.Play();
 
                 return;
@@ -138,8 +142,8 @@ namespace Carcassone
         private void Media_Ended(object sender, EventArgs e)
         {
             musicplayer.Open(new Uri("MainWindowMusic.mp3", UriKind.RelativeOrAbsolute));
-            musicplayer.Volume = 0.1;
+            musicplayer.Volume = 0.3;
             musicplayer.Play();
-        }
+        } 
     }
 }

@@ -1,5 +1,5 @@
-.\img\kartyak\rrrr_k.png;.;.;.;.;.;.;.
-.\img\kartyak\rrrr_k.png;.;.;.;.;.\img\kartyak\rrrr_k.png;.;.
-.\img\kartyak\rrrr_k.png;.;.;.;.;.\img\kartyak\rrrr_k.png;.;.
-.\img\kartyak\rrrr_k.png;.;.;.;.;.\img\kartyak\rrrr_k.png;.;.
-.\img\kartyak\rrrr_k.png;.;.\img\kartyak\rrrr_k.png;.\img\kartyak\rrrr_k.png;.\img\kartyak\rrrr_k.png;.\img\kartyak\rrrr_k.png;.;.\img\kartyak\rrrr_k.png
+.\img\kartyak\rrrv_r.png;.\img\kartyak\ruuv_u.png;.\img\kartyak\uvur_u.png;.;.;.;.;.\img\kartyak\rrrv_r.png
+.\img\kartyak\vvuu_u.png;.\img\kartyak\uvuu_u.png;.\img\kartyak\urrr_k.png;.\img\kartyak\rrru_k.png;.\img\kartyak\rrrv_r.png;.\img\kartyak\rrrv_r.png;.\img\kartyak\rvvv_v.png;.\img\kartyak\vvuv_v.png
+.\img\kartyak\ruuu_u.png;.;.\img\kartyak\rrur_k.png;.\img\kartyak\uuru_u.png;.\img\kartyak\rvuu_u.png;.\img\kartyak\uvur_u.png;.\img\kartyak\uvvv_v.png;.\img\kartyak\vvrv_v.png
+.\img\kartyak\ruuv_u.png;.\img\kartyak\uruu_u.png;.\img\kartyak\urur_u.png;.\img\kartyak\uuvr_u.png;.\img\kartyak\vuuv_u.png;.\img\kartyak\urur_u.png;.\img\kartyak\uvvv_v.png;.\img\kartyak\vvrv_v.png
+.\img\kartyak\rvvv_v.png;.\img\kartyak\vuur_u.png;.\img\kartyak\uruu_u.png;.\img\kartyak\urur_u.png;.\img\kartyak\uvuu_u.png;.\img\kartyak\uruv_u.png;.\img\kartyak\uvvv_v.png;.

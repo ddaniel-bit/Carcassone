@@ -34,8 +34,10 @@
     <None Remove="img\kartyak\urur_u.png" />
     <None Remove="img\kartyak\uruu_u.png" />
     <None Remove="img\kartyak\uruv_u.png" />
+    <None Remove="img\kartyak\urvu_u.png" />
     <None Remove="img\kartyak\uurr_u.png" />
     <None Remove="img\kartyak\uuru_u.png" />
+    <None Remove="img\kartyak\uurv_u.png" />
     <None Remove="img\kartyak\uuur_u.png" />
     <None Remove="img\kartyak\uuuu_u.png" />
     <None Remove="img\kartyak\uuuv_u.png" />
@@ -55,6 +57,7 @@
     <None Remove="img\kartyak\vrvr_v.png" />
     <None Remove="img\kartyak\vrvv_v.png" />
     <None Remove="img\kartyak\vuru_u.png" />
+    <None Remove="img\kartyak\vuur_u.png" />
     <None Remove="img\kartyak\vuuu_u.png" />
     <None Remove="img\kartyak\vuuv_u.png" />
     <None Remove="img\kartyak\vuvv_v.png" />
@@ -157,10 +160,16 @@
     <Resource Include="img\kartyak\uruv_u.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="img\kartyak\urvu_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="img\kartyak\uurr_u.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\kartyak\uuru_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\uurv_u.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\kartyak\uuur_u.png">
@@ -209,6 +218,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\kartyak\vuru_u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kartyak\vuur_u.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\kartyak\vuuu_u.png">

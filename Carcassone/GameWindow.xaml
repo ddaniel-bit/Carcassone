@@ -154,6 +154,30 @@
                     </LinearGradientBrush>
                 </Button.Foreground>
             </Button>
+            <Button Style="{DynamicResource ButtonStyleHover}"
+                    x:Name="btnMent"
+                    Grid.Row="6"
+                    Grid.Column="9"
+                    Width="180"
+                    Content="Mentés"
+                    FontSize="45"
+                    FontFamily="Algerian"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Cursor="Hand" MouseEnter="btnMent_MouseEnter" MouseLeave="btnMent_MouseLeave" Click="btnMent_Click">
+
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE55C"/>
+                        <GradientStop Color="#B5634A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+
+            </Button>
 
         </Grid>
     </Border>

@@ -64,7 +64,7 @@ namespace Carcassone
             {
                 string[] palya_listaban = { };
                 palya_listaban = File.ReadAllLines(betoltoFajl);
-
+                elsolape = false;
 
                 for (int sor = 0; sor < 5; sor++)
                 {
@@ -104,9 +104,9 @@ namespace Carcassone
             beallitasok = sr.ReadLine().Split(";");
             sr.Close();
             Application.Current.MainWindow = this;
-            Application.Current.MainWindow.Width =double.Parse(beallitasok[2]);
+            Application.Current.MainWindow.Width = double.Parse(beallitasok[2]);
             Application.Current.MainWindow.Height = double.Parse(beallitasok[3]);
-            zene =bool.Parse(beallitasok[0]);
+            zene = bool.Parse(beallitasok[0]);
             hangero = double.Parse(beallitasok[1]);
         }
 
@@ -292,7 +292,8 @@ namespace Carcassone
                 if (!vaneures.Contains("1"))
                 {
                     int[] pontok = Pontozas(true);
-                    MessageBox.Show("Ennyi pontot kaptál összesen: " + Convert.ToString(pontok[0] + pontok[1] + pontok[2] + pontok[3]) + ". Kolostorokból: " + Convert.ToString(pontok[0]) + " Városokból: " + Convert.ToString(pontok[1]) + " Utakból: " + Convert.ToString(pontok[2]) + " Pluszpontokból: " + pontok[3]);
+                    btnMent.IsEnabled = false;
+                    btnMent.Opacity = 0;
                 }
                 else if (JatekVege())
                 {
@@ -308,6 +309,8 @@ namespace Carcassone
                                 tbVege.Opacity = 1;
                                 btnKiertekeles.Opacity = 1;
                                 btnKiertekeles.IsEnabled = true;
+                                btnMent.IsEnabled = false;
+                                btnMent.Opacity = 0;
                             }
                         }
                     }
@@ -575,7 +578,11 @@ namespace Carcassone
             switch (e.Key)
             {
                 case Key.Escape:
-                    Close();
+                    MainWindow openMain = new MainWindow();
+                    openMain.Show();
+                    musicplayer.Stop();
+                    this.Close();
+
                     break;
                 default:
                     break;
@@ -666,7 +673,49 @@ namespace Carcassone
             musicplayer.Play();
         }
 
+        private void btnMent_MouseEnter(object sender, MouseEventArgs e)
+        {
+            btnMent.Foreground = MouseEnterColor();
+        }
 
+        private void btnMent_MouseLeave(object sender, MouseEventArgs e)
+        {
+            btnMent.Foreground = MouseLeaveColor();
+        }
+
+        private void btnMent_Click(object sender, RoutedEventArgs e)
+        {
+            using (StreamWriter writer = File.CreateText("palya.txt"))
+            {
+                //writer.WriteLineAsync("");
+                writer.Close();
+            }
+            for (int sorIndex = 0; sorIndex < 5; sorIndex++)
+            {
+                string sorMentes = "";
+                for (int oszlopIndex = 0; oszlopIndex < 8; oszlopIndex++)
+                {
+                    if (UrikTarolva[sorIndex, oszlopIndex] == "")
+                    {
+                        sorMentes += ".";
+                    }
+                    else
+                    {
+                        sorMentes += UrikTarolva[sorIndex, oszlopIndex];
+                    }
+                    if (oszlopIndex != 7)
+                    {
+                        sorMentes += ";";
+                    }
+                }
+                StreamWriter sw = new StreamWriter("palya.txt", append: true);
+                sw.WriteLine(sorMentes);
+                sw.Close();
+            }
+            MessageBox.Show("Sikeres mentés", "Mentés", MessageBoxButton.OK,
+            MessageBoxImage.Information);
+
+        }
     }
 }
 

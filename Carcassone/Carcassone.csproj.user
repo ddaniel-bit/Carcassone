@@ -11,6 +11,9 @@
     <Compile Update="MenuWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PalyaBetoltoWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="SummaryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -23,6 +26,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MenuWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PalyaBetoltoWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SummaryWindow.xaml">

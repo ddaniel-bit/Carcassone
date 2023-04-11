@@ -60,8 +60,8 @@ namespace Carcassone
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
             musicplayer.Stop();
-            GameWindow openGame = new GameWindow();
-            openGame.Show();
+            PalyaBetoltoWindow openGame = new PalyaBetoltoWindow();
+            openGame.ShowDialog();
             this.Close();
         }
 

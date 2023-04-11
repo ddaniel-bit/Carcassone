@@ -10,6 +10,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Documents.DocumentStructures;
+using System.Windows.Ink;
 using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Media;
@@ -30,7 +31,6 @@ namespace Carcassone
         bool elsolape = true;
         string[,] UrikTarolva = new string[5, 8];
 
-
         Uri hoversound = new Uri("hoversound.mp3", UriKind.RelativeOrAbsolute);
         MediaPlayer hoverplayer = new MediaPlayer();
 
@@ -41,7 +41,47 @@ namespace Carcassone
         {
             InitializeComponent();
             UrikTaroloFeltoltes();
-            BetoltGombokat();
+
+            string betoltoFajl = File.ReadLines("load.txt").First();
+            if (betoltoFajl == "")
+            {
+                BetoltGombokat();
+            }
+            else
+            {
+                string[] palya_listaban = { };
+                palya_listaban = File.ReadAllLines(betoltoFajl);
+
+
+                for (int sor = 0; sor < 5; sor++)
+                {
+                    string[] sorok = palya_listaban[sor].Split(';');
+                    for (int kartya = 0; kartya < 8; kartya++)
+                    {
+                        if (sorok[kartya] == ".")
+                        {
+                            UrikTarolva[sor, kartya] = "";
+                        }
+                        else
+                        {
+                            UrikTarolva[sor, kartya] = sorok[kartya];
+                        }
+                    }
+                }
+                BetoltPalyat();
+            }
+
+
+
+            /*for (int sorIndex = 0; sorIndex < 5; sorIndex++)
+            {
+                for (int oszlopIndex = 0; oszlopIndex < 8; oszlopIndex++)
+                {
+                    Button ujgomb = new Button();
+                    ujgomb.Name = "btn" + sorIndex.ToString() + "_" + oszlopIndex.ToString();
+                    ujgomb.Background = new ImageBrush(new BitmapImage(new Uri(@$"D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassonne9\Carcassone\img\kartyak\rrrr_k.png", UriKind.Relative)));
+                }
+            }*/
             LapValasztas();
 
         }
@@ -98,6 +138,72 @@ namespace Carcassone
 
             }
         }
+
+
+
+        private void BetoltPalyat()
+        {
+            //szinek
+            GradientColor1.StartPoint = new Point(0.5, 0);
+            GradientColor1.EndPoint = new Point(0.5, 1);
+            GradientColor1.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 0.0));
+            GradientColor1.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 1.0));
+
+            GradientColor2.StartPoint = new Point(0.5, 0);
+            GradientColor2.EndPoint = new Point(0.5, 1);
+            GradientColor2.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 0.0));
+            GradientColor2.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 1.0));
+
+            for (int sorIndex = 0; sorIndex < 5; sorIndex++)
+            {
+                for (int oszlopIndex = 0; oszlopIndex < 8; oszlopIndex++)
+                {
+                    Button ujgomb = new Button();
+                    //ujgomb.Background = Brushes.;
+                    if (UrikTarolva[sorIndex, oszlopIndex] == "")
+                    {
+                        if (oszlopIndex % 2 == 0)
+                        {
+                            ujgomb.Background = GradientColor1;
+                        }
+                        else
+                        {
+                            ujgomb.Background = GradientColor2;
+                        }
+                        ujgomb.Opacity = 0.2;
+                    }
+                    else
+                    {
+                        ujgomb.Background = new ImageBrush(new BitmapImage(new Uri(UrikTarolva[sorIndex, oszlopIndex], UriKind.Relative)));
+                        ujgomb.Opacity = 1;
+                        Style Temp;
+                        Temp = (Style)this.FindResource("ButtonStyleHover");
+                        ujgomb.Style = Temp;
+                        ujgomb.Opacity = 1;
+                        ujgomb.Cursor = Cursors.Arrow;
+                        ujgomb.BorderBrush = Brushes.Transparent;
+                    }
+
+                    ujgomb.Cursor = Cursors.Hand;
+
+
+                    ujgomb.Name = "btn" + sorIndex.ToString() + "_" + oszlopIndex.ToString();
+                    ujgomb.Click += gombClick;
+                    Grid.SetRow(ujgomb, sorIndex + 1);
+                    Grid.SetColumn(ujgomb, oszlopIndex + 1);
+                    this.gameGrid.Children.Add(ujgomb);
+                }
+
+            }
+        }
+
+
+
+
         private void UrikTaroloFeltoltes()
         {
             for (int sorIndex = 0; sorIndex < UrikTarolva.GetLength(0); sorIndex++)
@@ -177,7 +283,7 @@ namespace Carcassone
                             {
                                 tbVege.Opacity = 1;
                                 btnKiertekeles.Opacity = 1;
-                                btnKiertekeles.IsEnabled = true;  
+                                btnKiertekeles.IsEnabled = true;
                             }
                         }
                     }
@@ -227,7 +333,12 @@ namespace Carcassone
             bool szabalyos = false;
             if (UrikTarolva[sor - 1, oszlop - 1] == "")
             {
-                if (elsolape && sor != 1 && sor != 5 && oszlop != 1 && oszlop != 8 &&
+                if (elsolape && (sor != 1 || sor != 5 || oszlop != 1 || oszlop != 8))
+                {
+                    szabalyos = true;
+                    elsolape = false;
+                }
+                else if (elsolape &&
                     UrikTarolva[sor - 1, oszlop - 2].ToString() == ""
                 && UrikTarolva[sor - 1, oszlop].ToString() == ""
                 && UrikTarolva[sor - 2, oszlop - 1].ToString() == ""
@@ -497,7 +608,7 @@ namespace Carcassone
 
         private void btnKiertekeles_Click(object sender, RoutedEventArgs e)
         {
-            int[] pontok = Pontozas(false);     
+            int[] pontok = Pontozas(false);
 
             using (StreamWriter writer = File.CreateText("summary.txt"))
             {
@@ -507,7 +618,8 @@ namespace Carcassone
 
             SummaryWindow openSummary = new SummaryWindow();
             openSummary.ShowDialog();
-           
+            this.Close();
+
         }
 
 

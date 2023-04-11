@@ -79,6 +79,9 @@ namespace Carcassone
                 StreamWriter sw = new StreamWriter("leaderboard.txt", append: true);
                 sw.WriteLine(tbNev.Text+";"+osszpont);
                 sw.Close();
+                MainWindow openMain = new MainWindow();
+                openMain.Show();
+                this.Close();
             }
         }
     }

@@ -1,0 +1,5 @@
+.\img\kartyak\rrrr_k.png;.;.;.;.;.;.;.
+.\img\kartyak\rrrr_k.png;.;.;.;.;.\img\kartyak\rrrr_k.png;.;.
+.\img\kartyak\rrrr_k.png;.;.;.;.;.\img\kartyak\rrrr_k.png;.;.
+.\img\kartyak\rrrr_k.png;.;.;.;.;.\img\kartyak\rrrr_k.png;.;.
+.\img\kartyak\rrrr_k.png;.;.\img\kartyak\rrrr_k.png;.\img\kartyak\rrrr_k.png;.\img\kartyak\rrrr_k.png;.\img\kartyak\rrrr_k.png;.;.\img\kartyak\rrrr_k.png

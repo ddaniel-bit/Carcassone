@@ -68,8 +68,10 @@
     <None Remove="img\kartyak\vvvu_c.png" />
     <None Remove="img\kartyak\vvvu_v.png" />
     <None Remove="img\kartyak\vvvv_c.png" />
+    <None Remove="img\kartyak\vvvv_v.png" />
     <None Remove="img\menubackground.jpg" />
     <None Remove="img\menubg.jpg" />
+    <None Remove="img\palyavalasztobg.jpg" />
     <None Remove="img\RotateLeft.png" />
     <None Remove="img\RotateRight.png" />
     <None Remove="img\summarybg.jpg" />
@@ -236,7 +238,13 @@
     <Resource Include="img\kartyak\vvvu_v.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="img\kartyak\vvvv_v.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="img\menubg.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\palyavalasztobg.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img\RotateLeft.png">

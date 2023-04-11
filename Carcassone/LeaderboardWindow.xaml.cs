@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,9 +23,21 @@ namespace Carcassone
     public partial class LeaderboardWindow : Window
     {
         ObservableCollection<Leaderboard> leaderboard = new ObservableCollection<Leaderboard>();
+
+        MediaPlayer musicplayer = new MediaPlayer();
+        bool zene;
+        double hangero;
+
+        StreamReader sr = new StreamReader("settings.txt");
+        string[] beallitasok;
         public LeaderboardWindow()
         {
             InitializeComponent();
+            Beallitas();
+            if (zene)
+            {
+                PlaybackMusic();
+            }
 
             StreamReader sr = new StreamReader("leaderboard.txt");
             while (!sr.EndOfStream)
@@ -37,6 +50,14 @@ namespace Carcassone
             }
             dgLeaderboard.ItemsSource = leaderboard;
             sr.Close();
+        }
+
+        private void Beallitas()
+        {
+            beallitasok = sr.ReadLine().Split(";");
+            sr.Close();
+            zene = bool.Parse(beallitasok[0]);
+            hangero = double.Parse(beallitasok[1]);
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -75,11 +96,30 @@ namespace Carcassone
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
-        {
-          //  musicplayer.Stop();
+        {            
             MainWindow openMain = new MainWindow();
             openMain.Show();
+            musicplayer.Stop();
             this.Close();
+        }
+
+        public void PlaybackMusic()
+        {
+            if (musicplayer != null)
+            {
+                musicplayer.Open(new Uri("LeaderboardWindowMusic.mp3", UriKind.RelativeOrAbsolute));
+                musicplayer.MediaEnded += new EventHandler(Media_Ended);
+                musicplayer.Volume = hangero;
+                musicplayer.Play();
+
+                return;
+            }
+        }
+        private void Media_Ended(object sender, EventArgs e)
+        {
+            musicplayer.Open(new Uri("LeaderboardWindowMusic.mp3", UriKind.RelativeOrAbsolute));
+            musicplayer.Volume = hangero;
+            musicplayer.Play();
         }
     }
 }

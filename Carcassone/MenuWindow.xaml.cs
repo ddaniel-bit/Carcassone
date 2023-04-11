@@ -23,9 +23,16 @@ namespace Carcassone
     {
         StreamReader sr = new StreamReader("settings.txt");
         string[] beallitasok;
+
+        MediaPlayer musicplayer = new MediaPlayer();
+        bool zene;
+        double hangero;
         public MenuWindow()
         {
             InitializeComponent();
+
+
+
             beallitasok = sr.ReadLine().Split(";");
             sr.Close();
             if (bool.Parse(beallitasok[0]))
@@ -55,8 +62,12 @@ namespace Carcassone
                 lbFelbontas.Content = beallitasok[2] + "x" + beallitasok[3];
             }
 
-           
-            
+            zene = bool.Parse(beallitasok[0]);
+            hangero = double.Parse(beallitasok[1]);
+            if (zene)
+            {
+                PlaybackMusic();
+            }
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -77,6 +88,7 @@ namespace Carcassone
             btnBe.Opacity = 0.5;
             btnKi.Opacity = 1;
             beallitasok[0] = "true";
+            PlaybackMusic();
         }
 
         private void btnKi_Click(object sender, RoutedEventArgs e)
@@ -85,10 +97,10 @@ namespace Carcassone
             btnBe.Opacity = 1;
             btnKi.Opacity = 0.5;
             beallitasok[0] = "false";
-
+            musicplayer.Stop();
         }
 
-        private void kilepes_Click(object sender, RoutedEventArgs e)
+        private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             beallitasok[1] = sliHangero.Value.ToString();
             if (sliFelbontas.Value==1)
@@ -115,6 +127,7 @@ namespace Carcassone
 
             MainWindow openMain = new MainWindow();
             openMain.Show();
+            musicplayer.Stop();
             this.Close();         
         }
 
@@ -158,12 +171,28 @@ namespace Carcassone
             btnExit.Foreground = myVerticalGradient;
         }
 
-        private void btnExit_Click(object sender, RoutedEventArgs e)
+        public void PlaybackMusic()
         {
-            //  musicplayer.Stop();
-            MainWindow openMain = new MainWindow();
-            openMain.Show();
-            this.Close();
+            if (musicplayer != null)
+            {
+                musicplayer.Open(new Uri("MenuWindowMusic.mp3", UriKind.RelativeOrAbsolute));
+                musicplayer.MediaEnded += new EventHandler(Media_Ended);
+                musicplayer.Volume = hangero;
+                musicplayer.Play();
+
+                return;
+            }
+        }
+        private void Media_Ended(object sender, EventArgs e)
+        {
+            musicplayer.Open(new Uri("MenuWindowMusic.mp3", UriKind.RelativeOrAbsolute));
+            musicplayer.Volume = hangero;
+            musicplayer.Play();
+        }
+
+        private void sliHangero_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            musicplayer.Volume=sliHangero.Value;
         }
     }
 }

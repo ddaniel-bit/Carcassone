@@ -34,6 +34,10 @@ namespace Carcassone
         Uri hoversound = new Uri("hoversound.mp3", UriKind.RelativeOrAbsolute);
         MediaPlayer hoverplayer = new MediaPlayer();
 
+        MediaPlayer musicplayer = new MediaPlayer();
+        bool zene;
+        double hangero;
+
         LinearGradientBrush GradientColor1 = new LinearGradientBrush();
         LinearGradientBrush GradientColor2 = new LinearGradientBrush();
 
@@ -44,6 +48,10 @@ namespace Carcassone
         {
             InitializeComponent();
             Beallitas();
+            if (zene)
+            {
+                PlaybackMusic();
+            }
 
             UrikTaroloFeltoltes();
 
@@ -98,6 +106,8 @@ namespace Carcassone
             Application.Current.MainWindow = this;
             Application.Current.MainWindow.Width =double.Parse(beallitasok[2]);
             Application.Current.MainWindow.Height = double.Parse(beallitasok[3]);
+            zene =bool.Parse(beallitasok[0]);
+            hangero = double.Parse(beallitasok[1]);
         }
 
         private void LapValasztas()
@@ -632,8 +642,28 @@ namespace Carcassone
 
             SummaryWindow openSummary = new SummaryWindow();
             openSummary.ShowDialog();
+            musicplayer.Stop();
             this.Close();
 
+        }
+
+        public void PlaybackMusic()
+        {
+            if (musicplayer != null)
+            {
+                musicplayer.Open(new Uri("GameWindowMusic.mp3", UriKind.RelativeOrAbsolute));
+                musicplayer.MediaEnded += new EventHandler(Media_Ended);
+                musicplayer.Volume = hangero;
+                musicplayer.Play();
+
+                return;
+            }
+        }
+        private void Media_Ended(object sender, EventArgs e)
+        {
+            musicplayer.Open(new Uri("GameWindowMusic.mp3", UriKind.RelativeOrAbsolute));
+            musicplayer.Volume = hangero;
+            musicplayer.Play();
         }
 
 

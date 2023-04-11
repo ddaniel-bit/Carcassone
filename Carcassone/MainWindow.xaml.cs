@@ -22,9 +22,6 @@ namespace Carcassone
     /// </summary>
     public partial class MainWindow : Window
     {
-        Uri hoversound = new Uri("hoversound.mp3", UriKind.RelativeOrAbsolute);
-        MediaPlayer hoverplayer = new MediaPlayer();
-
         MediaPlayer musicplayer = new MediaPlayer();
 
 
@@ -59,17 +56,14 @@ namespace Carcassone
         }
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
-            musicplayer.Stop();
             PalyaBetoltoWindow openGame = new PalyaBetoltoWindow();
             openGame.ShowDialog();
+            musicplayer.Stop();
             this.Close();
         }
 
         private void btnStart_MouseEnter(object sender, MouseEventArgs e)
         {
-            hoverplayer.Open(hoversound);
-            hoverplayer.Play();
-
             btnStart.Foreground = MouseEnterColor();
         }
 
@@ -80,9 +74,6 @@ namespace Carcassone
 
         private void btnSettings_MouseEnter(object sender, MouseEventArgs e)
         {
-            hoverplayer.Open(hoversound);
-            hoverplayer.Play();
-
             btnSettings.Foreground = MouseEnterColor();
         }
 
@@ -93,9 +84,6 @@ namespace Carcassone
 
         private void btnExit_MouseEnter(object sender, MouseEventArgs e)
         {
-            hoverplayer.Open(hoversound);
-            hoverplayer.Play();
-
             btnExit.Foreground = MouseEnterColor();
         }
 
@@ -106,9 +94,6 @@ namespace Carcassone
 
         private void btnLeaderboard_MouseEnter(object sender, MouseEventArgs e)
         {
-            hoverplayer.Open(hoversound);
-            hoverplayer.Play();
-
             btnLeaderboard.Foreground = MouseEnterColor();
         }
 

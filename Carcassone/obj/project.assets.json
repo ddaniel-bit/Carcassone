@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Krisztian\\source\\repos\\Carcassone\\Carcassoneuj\\Carcassone\\Carcassone.csproj",
+      "projectUniqueName": "C:\\Users\\Krisztian\\source\\repos\\Carcassone\\Carcassone\\Carcassone\\Carcassone.csproj",
       "projectName": "Carcassone",
-      "projectPath": "C:\\Users\\Krisztian\\source\\repos\\Carcassone\\Carcassoneuj\\Carcassone\\Carcassone.csproj",
+      "projectPath": "C:\\Users\\Krisztian\\source\\repos\\Carcassone\\Carcassone\\Carcassone\\Carcassone.csproj",
       "packagesPath": "C:\\Users\\Krisztian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Krisztian\\source\\repos\\Carcassone\\Carcassoneuj\\Carcassone\\obj\\",
+      "outputPath": "C:\\Users\\Krisztian\\source\\repos\\Carcassone\\Carcassone\\Carcassone\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Krisztian\\AppData\\Roaming\\NuGet\\NuGet.Config",

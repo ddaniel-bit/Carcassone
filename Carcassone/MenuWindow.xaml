@@ -186,7 +186,7 @@
                         IsSelectionRangeEnabled="True"
                         SelectionStart="0"
                         SelectionEnd="100"
-                        Cursor="Hand">
+                        Cursor="Hand" ValueChanged="sliHangero_ValueChanged">
                     <Slider.Resources>
                         <LinearGradientBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" EndPoint="1,0.5" StartPoint="0,0.5">
                             <GradientStop Color="#FFE55C" Offset="1"/>

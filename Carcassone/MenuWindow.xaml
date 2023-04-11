@@ -113,7 +113,6 @@
                 </Label>
 
                 <Label x:Name="lbZene"
-                       Content="Be"
                        VerticalAlignment="Center"
                        FontSize="24"
                        FontFamily="Algerian">
@@ -181,7 +180,14 @@
                 </Label>
 
 
-                <Slider Style="{DynamicResource SliderStyle1}" IsSelectionRangeEnabled="True" SelectionStart="0" SelectionEnd="100" Cursor="Hand">
+                <Slider x:Name="sliHangero"
+                        Style="{DynamicResource SliderStyle1}"
+                        Minimum="0"
+                        Maximum="1"
+                        IsSelectionRangeEnabled="True"
+                        SelectionStart="0"
+                        SelectionEnd="100"
+                        Cursor="Hand">
                     <Slider.Resources>
                         <LinearGradientBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" EndPoint="1,0.5" StartPoint="0,0.5">
                             <GradientStop Color="#FFE55C" Offset="1"/>
@@ -193,6 +199,8 @@
                 
                 
                 </StackPanel>
+            <Button x:Name="kilepes" Grid.Row="2" Click="kilepes_Click" >Kilepes</Button>
+            <Button x:Name="asd" Grid.Row="4" Click="asd_Click" >asd</Button>
             </Grid>
     </Border>
 </Window>

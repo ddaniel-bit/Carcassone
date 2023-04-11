@@ -103,14 +103,14 @@
 
 
 
-            <TextBlock Grid.Column="10"
+            <TextBlock x:Name="tbVege" Grid.Column="10"
                    Grid.Row="4"
                    FontFamily="Algerian"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    FontSize="25"
                    TextAlignment="Center"
-                   Opacity="1">
+                   Opacity="0">
                 <TextBlock.Effect>
                     <DropShadowEffect/>
                 </TextBlock.Effect>
@@ -136,7 +136,12 @@
                     Cursor="Hand"
                     FontSize="20"
                     FontFamily="Algerian"
-                    Height="25" Click="btnKiertekeles_Click" MouseEnter="btnKiertekeles_MouseEnter" MouseLeave="btnKiertekeles_MouseLeave">
+                    Height="25"
+                    Click="btnKiertekeles_Click"
+                    MouseEnter="btnKiertekeles_MouseEnter"
+                    MouseLeave="btnKiertekeles_MouseLeave"
+                    IsEnabled="False"
+                    Opacity="0">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>

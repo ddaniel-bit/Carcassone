@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Krisztian\source\repos\Carcassone\Carcassone\App.xaml
-3-1952006521
+4-707513805
 
-8-2060056074
+91321822105
 194-1617825143
-GameWindow.xaml;MainWindow.xaml;MenuWindow.xaml;
+GameWindow.xaml;MainWindow.xaml;MenuWindow.xaml;SummaryWindow.xaml;
 
-False
+True
 

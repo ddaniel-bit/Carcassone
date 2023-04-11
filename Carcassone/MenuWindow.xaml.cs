@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,9 +21,23 @@ namespace Carcassone
     /// </summary>
     public partial class MenuWindow : Window
     {
+        StreamReader sr = new StreamReader("settings.txt");
+        string[] beallitasok;
         public MenuWindow()
         {
             InitializeComponent();
+            beallitasok = sr.ReadLine().Split(";");
+            sr.Close();
+            if (bool.Parse(beallitasok[0]))
+            {
+                lbZene.Content = "Be";
+            }
+            else
+            {
+                lbZene.Content = "Ki";
+            }
+            sliHangero.Value = double.Parse(beallitasok[1]);
+            
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -41,6 +57,7 @@ namespace Carcassone
             lbZene.Content = "Be";
             btnBe.Opacity = 0.5;
             btnKi.Opacity = 1;
+            beallitasok[0] = "true";
         }
 
         private void btnKi_Click(object sender, RoutedEventArgs e)
@@ -48,6 +65,31 @@ namespace Carcassone
             lbZene.Content = "Ki";
             btnBe.Opacity = 1;
             btnKi.Opacity = 0.5;
+            beallitasok[0] = "false";
+
+        }
+
+        private void kilepes_Click(object sender, RoutedEventArgs e)
+        {
+            beallitasok[1] = sliHangero.Value.ToString();
+
+            using (StreamWriter writer = File.CreateText("settings.txt"))
+            {
+                writer.WriteLineAsync(beallitasok[0] + ";" + beallitasok[1]);
+                writer.Close();
+            }
+
+            MainWindow openMain = new MainWindow();
+            openMain.Show();
+            this.Close();         
+        }
+        private void asd_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            SummaryWindow openSummary = new SummaryWindow();
+            openSummary.ShowDialog();
+
 
         }
     }

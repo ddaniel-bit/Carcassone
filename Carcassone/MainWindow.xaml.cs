@@ -26,10 +26,29 @@ namespace Carcassone
         MediaPlayer hoverplayer = new MediaPlayer();
 
         MediaPlayer musicplayer = new MediaPlayer();
+
+
+        StreamReader sr = new StreamReader("settings.txt");
+        bool zene;
+        double hangero;
+            
         public MainWindow()
         {
             InitializeComponent();
-            PlaybackMusic();
+
+            while (!sr.EndOfStream)
+            {
+                string[] beallitasok = sr.ReadLine().Split(";");
+                zene =bool.Parse(beallitasok[0]);
+                hangero = double.Parse(beallitasok[1]);
+                
+            }
+            sr.Close();
+            if (zene)
+            {
+                PlaybackMusic();
+            }
+            
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -133,7 +152,7 @@ namespace Carcassone
             {
                 musicplayer.Open(new Uri("MainWindowMusic.mp3", UriKind.RelativeOrAbsolute));
                 musicplayer.MediaEnded += new EventHandler(Media_Ended);
-                musicplayer.Volume = 0.3;
+                musicplayer.Volume = hangero;
                 musicplayer.Play();
 
                 return;
@@ -142,7 +161,7 @@ namespace Carcassone
         private void Media_Ended(object sender, EventArgs e)
         {
             musicplayer.Open(new Uri("MainWindowMusic.mp3", UriKind.RelativeOrAbsolute));
-            musicplayer.Volume = 0.3;
+            musicplayer.Volume = hangero;
             musicplayer.Play();
         } 
     }

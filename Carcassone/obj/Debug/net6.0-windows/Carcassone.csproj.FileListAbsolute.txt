@@ -312,3 +312,5 @@ D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassonne6\Carcassone\obj\D
 D:\Dani mappája\.Home office\Vadasz Denes verseny\Carcassonne6\Carcassone\obj\Debug\net6.0-windows\ref\Carcassone.dll
 C:\Users\Krisztian\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\MenuWindow.g.cs
 C:\Users\Krisztian\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\MenuWindow.baml
+C:\Users\Krisztian\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\SummaryWindow.g.cs
+C:\Users\Krisztian\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\SummaryWindow.baml

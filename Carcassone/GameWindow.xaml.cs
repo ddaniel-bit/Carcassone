@@ -175,9 +175,9 @@ namespace Carcassone
                             randomlap = @".\img\kartyak\" + randomlap[15] + randomlap[16] + randomlap[17] + randomlap[14] + randomlap[18] + randomlap[19] + ".png";
                             if (JatekVege())
                             {
-                                MessageBox.Show("Na en veled nem jatszok.");
-                                int[] pontok = Pontozas(false);
-                                MessageBox.Show("Ennyi pontot kaptál összesen: " + Convert.ToString(pontok[0] + pontok[1] + pontok[2] + pontok[3]) + ". Kolostorokból: " + Convert.ToString(pontok[0]) + " Városokból: " + Convert.ToString(pontok[1]) + " Utakból: " + Convert.ToString(pontok[2]) + " Pluszpontokból: " + pontok[3]);
+                                tbVege.Opacity = 1;
+                                btnKiertekeles.Opacity = 1;
+                                btnKiertekeles.IsEnabled = true;  
                             }
                         }
                     }
@@ -461,11 +461,6 @@ namespace Carcassone
             preview.Source = new BitmapImage(new Uri(@$"{randomlap}", UriKind.Relative));
         }
 
-        private void btnKiertekeles_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void btnKiertekeles_MouseEnter(object sender, MouseEventArgs e)
         {
             btnKiertekeles.Foreground = MouseEnterColor();
@@ -500,7 +495,20 @@ namespace Carcassone
             return myVerticalGradient;
         }
 
+        private void btnKiertekeles_Click(object sender, RoutedEventArgs e)
+        {
+            int[] pontok = Pontozas(false);     
 
+            using (StreamWriter writer = File.CreateText("summary.txt"))
+            {
+                writer.WriteLineAsync(Convert.ToString(pontok[0] + pontok[1] + pontok[2] + pontok[3]) + ";" + Convert.ToString(pontok[0]) + ";" + Convert.ToString(pontok[1]) + ";" + Convert.ToString(pontok[2]) + ";" + pontok[3]);
+                writer.Close();
+            }
+
+            SummaryWindow openSummary = new SummaryWindow();
+            openSummary.ShowDialog();
+           
+        }
 
 
     }

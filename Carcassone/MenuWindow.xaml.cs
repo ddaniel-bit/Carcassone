@@ -31,10 +31,12 @@ namespace Carcassone
             if (bool.Parse(beallitasok[0]))
             {
                 lbZene.Content = "Be";
+                btnBe.Opacity = 0.5;
             }
             else
             {
                 lbZene.Content = "Ki";
+                btnKi.Opacity = 0.5;
             }
             sliHangero.Value = double.Parse(beallitasok[1]);
             
@@ -82,15 +84,6 @@ namespace Carcassone
             MainWindow openMain = new MainWindow();
             openMain.Show();
             this.Close();         
-        }
-        private void asd_Click(object sender, RoutedEventArgs e)
-        {
-
-
-            SummaryWindow openSummary = new SummaryWindow();
-            openSummary.ShowDialog();
-
-
         }
     }
 }

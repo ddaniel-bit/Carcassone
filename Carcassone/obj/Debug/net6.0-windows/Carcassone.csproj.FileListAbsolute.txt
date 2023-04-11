@@ -314,3 +314,5 @@ C:\Users\Krisztian\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\M
 C:\Users\Krisztian\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\MenuWindow.baml
 C:\Users\Krisztian\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\SummaryWindow.g.cs
 C:\Users\Krisztian\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\SummaryWindow.baml
+C:\Users\Krisztian\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\LeaderboardWindow.g.cs
+C:\Users\Krisztian\source\repos\Carcassone\Carcassone\obj\Debug\net6.0-windows\LeaderboardWindow.baml

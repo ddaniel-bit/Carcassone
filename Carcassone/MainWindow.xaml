@@ -25,6 +25,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
+                
                 <RowDefinition/>
 
             </Grid.RowDefinitions>
@@ -107,9 +108,36 @@
                 </Button.Foreground>
 
             </Button>
+
+            <Button Style="{DynamicResource ButtonStyleHover}"
+                    x:Name="btnLeaderboard"
+                    Grid.Row="4"
+                    Width="210"
+                    Content="Toplista"
+                    FontSize="45"
+                    FontFamily="Algerian"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    MouseEnter="btnLeaderboard_MouseEnter"
+                    MouseLeave="btnLeaderboard_MouseLeave"
+                    Click="btnLeaderboard_Click"
+                    Cursor="Hand">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE55C"/>
+                        <GradientStop Color="#B5634A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+
+            </Button>
+
             <Button Style="{DynamicResource ButtonStyleHover}"
                     x:Name="btnExit"
-                    Grid.Row="4"
+                    Grid.Row="5"
                     Width="180"
                     Content="Kilépés"
                     FontSize="45"
@@ -135,12 +163,12 @@
 
             <Image Grid.Row="5"
                    Source="/img/tren.png"
-                   Margin="-72,19,72,16"
+                   Margin="-56,21,-1066,19"
                    Height="15"/>
 
             <Label Content="Legalize Trenbolone Acetate"
                    Grid.Row="5"
-                   HorizontalAlignment="Center"
+                   HorizontalAlignment="Right"
                    VerticalAlignment="Center"
                    Foreground="Gray"
                    FontSize="10"/>

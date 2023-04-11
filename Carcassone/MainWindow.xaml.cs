@@ -104,10 +104,32 @@ namespace Carcassone
             btnExit.Foreground = MouseLeaveColor();
         }
 
+        private void btnLeaderboard_MouseEnter(object sender, MouseEventArgs e)
+        {
+            hoverplayer.Open(hoversound);
+            hoverplayer.Play();
+
+            btnLeaderboard.Foreground = MouseEnterColor();
+        }
+
+        private void btnLeaderboard_MouseLeave(object sender, MouseEventArgs e)
+        {
+            btnLeaderboard.Foreground = MouseLeaveColor();
+        }
+
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+
+        private void btnLeaderboard_Click(object sender, RoutedEventArgs e)
+        {
+            //ajjaj
+            LeaderboardWindow openLeaderboard = new LeaderboardWindow();
+            openLeaderboard.Show();
+            this.Close();
+        }
+
 
         private static LinearGradientBrush MouseEnterColor()
         {

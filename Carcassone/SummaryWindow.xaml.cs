@@ -24,23 +24,7 @@ namespace Carcassone
         public SummaryWindow()
         {
             InitializeComponent();
-            Pontozas();
-            Rekord();
-        }
-
-        private void Rekord()
-        {
-            StreamReader sr = new StreamReader("record.txt");
-            int record = sr.Read()-48;
-            sr.Close();
-            if (osszpont > record)
-            {
-                using (StreamWriter writer = File.CreateText("record.txt"))
-                {
-                    writer.WriteLineAsync(osszpont.ToString());
-                    writer.Close();
-                }
-            }
+            Pontozas();    
         }
 
         private void Pontozas()
@@ -90,7 +74,12 @@ namespace Carcassone
 
         private void btntovabb_Click(object sender, RoutedEventArgs e)
         {
-
+            if (tbNev.Text!="")
+            {
+                StreamWriter sw = new StreamWriter("leaderboard.txt", append: true);
+                sw.WriteLine(tbNev.Text+";"+osszpont);
+                sw.Close();
+            }
         }
     }
 }

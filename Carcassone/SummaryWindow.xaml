@@ -229,6 +229,41 @@
                 </Label>
             </StackPanel>
 
+            <Label Content="Játékosnév:"
+                       VerticalAlignment="Bottom"
+                       HorizontalAlignment="Right"
+                       FontSize="18"
+                       FontFamily="Algerian"
+                       Grid.Row="4"
+                       Margin="0,0,13,0">
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE55C"/>
+                        <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+
+            </Label>
+
+            <TextBox x:Name="tbNev"
+                     Grid.Row="5"
+                     Width="100"
+                     HorizontalAlignment="Right"
+                     VerticalAlignment="Top"
+                     Margin="0,0,24,0">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7FFFE55C"/>
+                        <GradientStop Color="#7FB5634A"
+                                      Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+
             <Button x:Name="btntovabb"
                         Content="Tovább"
                         Click="btntovabb_Click"

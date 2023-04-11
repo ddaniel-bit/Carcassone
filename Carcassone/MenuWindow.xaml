@@ -138,7 +138,6 @@
                         FontSize="24"
                         Width="25"
                         FontFamily="Algerian"
-                        Opacity="0.5"
                         Cursor="Hand">
                     <Button.Foreground>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -200,7 +199,15 @@
                 
                 </StackPanel>
             <Button x:Name="kilepes" Grid.Row="2" Click="kilepes_Click" >Kilepes</Button>
-            <Button x:Name="asd" Grid.Row="4" Click="asd_Click" >asd</Button>
-            </Grid>
-    </Border>
+            <ComboBox Grid.Row="3">
+                <ComboBoxItem>
+                    asd
+                </ComboBoxItem>
+            </ComboBox>
+            <ComboBoxItem>
+                asd
+            </ComboBoxItem>
+        </Grid>
+      
+        </Border>
 </Window>

@@ -39,6 +39,23 @@ namespace Carcassone
                 btnKi.Opacity = 0.5;
             }
             sliHangero.Value = double.Parse(beallitasok[1]);
+            if (beallitasok[2] == "1280")
+            {
+                sliFelbontas.Value = 1;
+                lbFelbontas.Content = beallitasok[2] + "x" + beallitasok[3];
+            }
+            else if (beallitasok[2] == "1600")
+            {
+                sliFelbontas.Value = 2;
+                lbFelbontas.Content = beallitasok[2] + "x" + beallitasok[3];
+            }
+            else
+            {
+                sliFelbontas.Value = 3;
+                lbFelbontas.Content = beallitasok[2] + "x" + beallitasok[3];
+            }
+
+           
             
         }
 
@@ -74,16 +91,79 @@ namespace Carcassone
         private void kilepes_Click(object sender, RoutedEventArgs e)
         {
             beallitasok[1] = sliHangero.Value.ToString();
+            if (sliFelbontas.Value==1)
+            {
+                beallitasok[2] = "1280";
+                beallitasok[3] = "720";
+            }
+            else if (sliFelbontas.Value == 2)
+            {
+                beallitasok[2] = "1600";
+                beallitasok[3] = "900";
+            }
+            else
+            {
+                beallitasok[2] = "1920";
+                beallitasok[3] = "1280";
+            }
 
             using (StreamWriter writer = File.CreateText("settings.txt"))
             {
-                writer.WriteLineAsync(beallitasok[0] + ";" + beallitasok[1]);
+                writer.WriteLineAsync(beallitasok[0] + ";" + beallitasok[1] + ";" + beallitasok[2] + ";" + beallitasok[3]);
                 writer.Close();
             }
 
             MainWindow openMain = new MainWindow();
             openMain.Show();
             this.Close();         
+        }
+
+        private void sliFelbontas_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (sliFelbontas.Value==1)
+            {
+                lbFelbontas.Content = "1280x720";
+            }
+            else if (sliFelbontas.Value == 2)
+            {
+                lbFelbontas.Content = "1600x900";
+            }
+            else
+            {
+                lbFelbontas.Content = "1920x1080";
+            }
+        }
+
+        private void btnExit_MouseEnter(object sender, MouseEventArgs e)
+        {
+            LinearGradientBrush myVerticalGradient = new LinearGradientBrush();
+            myVerticalGradient.StartPoint = new Point(0.5, 0);
+            myVerticalGradient.EndPoint = new Point(0.5, 1);
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 0.0));
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 1.0));
+            btnExit.Foreground = myVerticalGradient;
+        }
+
+        private void btnExit_MouseLeave(object sender, MouseEventArgs e)
+        {
+            LinearGradientBrush myVerticalGradient = new LinearGradientBrush();
+            myVerticalGradient.StartPoint = new Point(0.5, 0);
+            myVerticalGradient.EndPoint = new Point(0.5, 1);
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(255, 229, 92), 0.0));
+            myVerticalGradient.GradientStops.Add(
+                new GradientStop(Color.FromRgb(181, 99, 74), 1.0));
+            btnExit.Foreground = myVerticalGradient;
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            //  musicplayer.Stop();
+            MainWindow openMain = new MainWindow();
+            openMain.Show();
+            this.Close();
         }
     }
 }

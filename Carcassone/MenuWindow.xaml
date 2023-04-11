@@ -63,7 +63,7 @@
             </StackPanel>
 
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="2" >
                 <Button  x:Name="btnKi" Content=">"
                          Click="btnKi_Click"
                          Background="Transparent"
@@ -159,7 +159,7 @@
 
 
 
-            <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+            <StackPanel Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center">
                 
                 <Label Content="Zene Hangereje:"
                        VerticalAlignment="Center"
@@ -198,15 +198,92 @@
                 
                 
                 </StackPanel>
-            <Button x:Name="kilepes" Grid.Row="2" Click="kilepes_Click" >Kilepes</Button>
-            <ComboBox Grid.Row="3">
-                <ComboBoxItem>
-                    asd
-                </ComboBoxItem>
-            </ComboBox>
-            <ComboBoxItem>
-                asd
-            </ComboBoxItem>
+
+            <StackPanel Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Felbontás nagysága:"
+                       VerticalAlignment="Center"
+                       FontSize="24"
+                       FontFamily="Algerian">
+                        <Label.Foreground>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFE55C"/>
+                                <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                            </LinearGradientBrush>
+                        </Label.Foreground>
+                        <Label.Effect>
+                            <DropShadowEffect/>
+                        </Label.Effect>
+
+                    </Label>
+                    <Label x:Name="lbFelbontas"
+                           VerticalAlignment="Center"
+                           FontSize="24"
+                           FontFamily="Algerian">
+                        <Label.Foreground>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFE55C"/>
+                                <GradientStop Color="#B5634A"
+                                      Offset="1"/>
+                            </LinearGradientBrush>
+                        </Label.Foreground>
+                        <Label.Effect>
+                            <DropShadowEffect/>
+                        </Label.Effect>
+
+                    </Label>
+                </StackPanel>
+                    
+
+
+                <Slider x:Name="sliFelbontas"
+                        Style="{DynamicResource SliderStyle1}"
+                        Minimum="1"
+                        Maximum="3"
+                        TickFrequency="1"
+                        IsSnapToTickEnabled="True"
+                        IsSelectionRangeEnabled="True"
+                        SelectionStart="0"
+                        SelectionEnd="100"
+                        Cursor="Hand" ValueChanged="sliFelbontas_ValueChanged">
+                    <Slider.Resources>
+                        <LinearGradientBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" EndPoint="1,0.5" StartPoint="0,0.5">
+                            <GradientStop Color="#FFE55C" Offset="1"/>
+                            <GradientStop Color="#B5634A" Offset="0"/>
+                        </LinearGradientBrush>
+                    </Slider.Resources>
+
+                </Slider>
+            </StackPanel>
+
+            <Button Style="{DynamicResource ButtonStyleHover}"
+                    x:Name="btnExit"
+                    Grid.Row="5"
+                    Grid.ColumnSpan="2"
+                    Width="450"
+                    Height="50"
+                    Content="Vissza a fömenübe"
+                    FontSize="45"
+                    FontFamily="Algerian"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    MouseEnter="btnExit_MouseEnter"
+                    MouseLeave="btnExit_MouseLeave"
+                    Click="btnExit_Click"
+                    Cursor="Hand">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE55C"/>
+                        <GradientStop Color="#B5634A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+
+            </Button>
         </Grid>
       
         </Border>

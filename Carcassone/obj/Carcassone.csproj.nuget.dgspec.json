@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassonne10\\Carcassone\\Carcassone.csproj": {}
+    "C:\\Users\\Krisztian\\source\\repos\\Carcassone\\Carcassoneuj\\Carcassone\\Carcassone.csproj": {}
   },
   "projects": {
-    "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassonne10\\Carcassone\\Carcassone.csproj": {
+    "C:\\Users\\Krisztian\\source\\repos\\Carcassone\\Carcassoneuj\\Carcassone\\Carcassone.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassonne10\\Carcassone\\Carcassone.csproj",
+        "projectUniqueName": "C:\\Users\\Krisztian\\source\\repos\\Carcassone\\Carcassoneuj\\Carcassone\\Carcassone.csproj",
         "projectName": "Carcassone",
-        "projectPath": "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassonne10\\Carcassone\\Carcassone.csproj",
-        "packagesPath": "C:\\Users\\ddaniel\\.nuget\\packages\\",
-        "outputPath": "D:\\Dani mappája\\.Home office\\Vadasz Denes verseny\\Carcassonne10\\Carcassone\\obj\\",
+        "projectPath": "C:\\Users\\Krisztian\\source\\repos\\Carcassone\\Carcassoneuj\\Carcassone\\Carcassone.csproj",
+        "packagesPath": "C:\\Users\\Krisztian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Krisztian\\source\\repos\\Carcassone\\Carcassoneuj\\Carcassone\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ddaniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Krisztian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

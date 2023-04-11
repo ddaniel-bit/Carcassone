@@ -37,9 +37,14 @@ namespace Carcassone
         LinearGradientBrush GradientColor1 = new LinearGradientBrush();
         LinearGradientBrush GradientColor2 = new LinearGradientBrush();
 
+        StreamReader sr = new StreamReader("settings.txt");
+        string[] beallitasok;
+
         public GameWindow()
         {
             InitializeComponent();
+            Beallitas();
+
             UrikTaroloFeltoltes();
 
             string betoltoFajl = File.ReadLines("load.txt").First();
@@ -84,6 +89,15 @@ namespace Carcassone
             }*/
             LapValasztas();
 
+        }
+
+        private void Beallitas()
+        {
+            beallitasok = sr.ReadLine().Split(";");
+            sr.Close();
+            Application.Current.MainWindow = this;
+            Application.Current.MainWindow.Width =double.Parse(beallitasok[2]);
+            Application.Current.MainWindow.Height = double.Parse(beallitasok[3]);
         }
 
         private void LapValasztas()

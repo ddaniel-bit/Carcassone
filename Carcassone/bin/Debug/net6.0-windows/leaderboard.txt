@@ -16,3 +16,4 @@ Krisz;200
 Apad;200
 kisjozska;34
 lajos;38
+Gyula;60

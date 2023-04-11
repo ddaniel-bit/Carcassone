@@ -124,7 +124,7 @@ namespace Carcassone
 
         private void btnLeaderboard_Click(object sender, RoutedEventArgs e)
         {
-            //ajjaj
+            musicplayer.Stop();
             LeaderboardWindow openLeaderboard = new LeaderboardWindow();
             openLeaderboard.Show();
             this.Close();

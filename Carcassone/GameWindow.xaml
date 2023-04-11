@@ -39,7 +39,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="2.5*"/>
             </Grid.ColumnDefinitions>
-            <Label x:Name="lblDebug" Content="debug" Foreground="White" Grid.ColumnSpan="3" Margin="58,16,116,104" Grid.RowSpan="2"/>
+            <Label x:Name="lblDebug" Content="debug" Foreground="White" Grid.ColumnSpan="3" Margin="58,16,116,104" Grid.RowSpan="2" Opacity="0"/>
             <StackPanel HorizontalAlignment="Right" Grid.Column="10">
                 <Button Style="{DynamicResource ButtonStyleHover}"
                     x:Name="btnTalcaraTesz"

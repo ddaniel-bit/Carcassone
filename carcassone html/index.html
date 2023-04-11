@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.ico">
+    <title>Carcassone</title>
+</head>
+
+<body>
+    <div class="shadow"></div>
+    <nav>
+        <ul>
+            <li><a href="#bevezeto">Bevezető</a></li>
+            <li><a href="#jatekszabalyok">Játékszabályok</a></li>
+            <li><a href="#jatekmenet">Játékmenet</a></li>
+            <li><a href="#eleres">Elérés</a></li>
+        </ul>
+    </nav>
+    <div class="back">
+        <div class="content" id="bevezeto">
+            <h1>Bevezető</h1>
+            <p>A Miskolci Egyetem Általános Informatikai Intézeti Tanszéke által, 2023.04.12-én megrendezett Vadász
+                Dénes Informatikai Verseny programozó kategóriában indult Legalize Trenbolone Acetat csapat munkája
+                bemutatására készült ez a weboldal. A csapatunk feladata a Carcassonne táblajáték módosított
+                változatának leprogramozása volt. A játékot a csapatunk C# és WPF technológia használatával valósította
+                meg.</p>
+        </div>
+        <div class="content" id="jatekszabalyok">
+            <h1>Játékszabályok</h1>
+            <p>A játékot egy játékos játssza. Adott egy 5x8-as négyzetrácsos játéklap és 80 db területkártya. A
+                számítógép minden körben véletlenszerűen kiválaszt egy területkártyát, amit a játékosnak a megadott
+                szabályok figyelembe vételével el kell helyeznie a játéklapon. A játék akkor ér véget, ha: a játékos nem
+                tudja elhelyezni a szabályok szerint a területkártyáját, vagy betelt a játéklap. A játék végén a
+                lerakott területkártyák értékét összegezve, a számítógép kiírja a gyűjtött pontokat. Az első kártyát tetszőleges mezőre helyezhetjük. A további kártyákat úgy kell lerakni, hogy legalább egy oldaluk illeszkedjen egy már lerakott laphoz. Nem elég, ha a kártyának csak a sarka érintkezik egy (vagy több), már letett lap sarkával!</p>
+
+            
+        </div>
+        <div class="content">
+            <h2>Pontozás</h2>
+            <ul>
+                <li>A városok értéke annyiszor 2 pont, ahány kártyából áll.</li>
+                <li>Egy befejezett városért plusz 5 pont jár.</li>
+                <li>Az utak értéke annyiszor 1 pont, ahány kártyából áll.</li>
+                <li>Egy befejezett útért plusz 2 pont jár.</li>
+                <li>A kolostor kártya annyi pontot ér, ahány szomszédja van (max. 8).</li>
+                <li>Ha a játék úgy ért véget, hogy betelt a játéklap, akkor plusz 10 pont.</li>
+            </ul>
+        </div>
+        <div class="content" id="jatekmenet">
+            <h1>Játékmenet</h1>
+            <p></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

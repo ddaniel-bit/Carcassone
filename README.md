@@ -23,7 +23,7 @@ Megnyitáskor 3 opció közül választhat a felhasználó.
 - A kártyát az előnézet alatti **forgató gombokkal** tudjuk elforgatni
 - A játék menet közben elmenthető a **mentés** ikonnal
 - Ha a játékos nem tud szabályosan új lapot elhelyezni vagy az összes üres hely betelt, a játék véget ér
-- Ha a játék véget ért a játékos lehetőséget kap a pontjainak elmentésére
+- Ha a játék véget ért a játékosnak meg kell adnia egy felhasználónevet és a pontjai mentésre kerülnek
 
 ## Beállítások
 A játékos kikapcsolhatja vagy beállíthatja a zene hangerejét és a jaták felbontását

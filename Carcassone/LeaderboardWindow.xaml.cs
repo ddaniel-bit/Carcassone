@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -42,13 +42,9 @@ namespace Carcassone
             StreamReader sr = new StreamReader("leaderboard.txt");
             while (!sr.EndOfStream)
             {
-              if(sr.ReadLine()!="")
-              {
-                string[] mezok = sr.ReadLine().Split(";");
-                Leaderboard Ujadat = new Leaderboard(mezok[0], int.Parse(mezok[1]));
-                leaderboard.Add(Ujadat);
-              }
-
+                    string[] mezok = sr.ReadLine().Split(";");
+                    Leaderboard Ujadat = new Leaderboard(mezok[0], int.Parse(mezok[1]));
+                    leaderboard.Add(Ujadat);
             }
             dgLeaderboard.ItemsSource = leaderboard;
             sr.Close();

@@ -42,10 +42,12 @@ namespace Carcassone
             StreamReader sr = new StreamReader("leaderboard.txt");
             while (!sr.EndOfStream)
             {
+              if(sr.readLine()!="")
+              {
                 string[] mezok = sr.ReadLine().Split(";");
                 Leaderboard Ujadat = new Leaderboard(mezok[0], int.Parse(mezok[1]));
                 leaderboard.Add(Ujadat);
-
+              }
 
             }
             dgLeaderboard.ItemsSource = leaderboard;

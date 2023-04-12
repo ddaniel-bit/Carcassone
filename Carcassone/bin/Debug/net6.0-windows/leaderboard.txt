@@ -1,4 +1,1 @@
-Dani;93
-Krisztián;92
-Tonyás;3
-Géza;56
+

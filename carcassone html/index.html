@@ -17,12 +17,17 @@
             <li><a href="#bevezeto">Bevezető</a></li>
             <li><a href="#jatekszabalyok">Játékszabályok</a></li>
             <li><a href="#jatekmenet">Játékmenet</a></li>
-            <li><a href="#eleres">Elérés</a></li>
         </ul>
     </nav>
     <div class="back">
         <div class="content" id="bevezeto">
             <h1>Bevezető</h1>
+            <div id="imageDiv">
+                <button id="prevBtn" onclick="changeImage(-1)"><</button>
+                <button id="nextBtn" onclick="changeImage(1)">></button>
+                <img id="mainImage" src="img/background.jpg">
+            </div>
+
             <p>A Miskolci Egyetem Általános Informatikai Intézeti Tanszéke által, 2023.04.12-én megrendezett Vadász
                 Dénes Informatikai Verseny programozó kategóriában indult Legalize Trenbolone Acetat csapat munkája
                 bemutatására készült ez a weboldal. A csapatunk feladata a Carcassonne táblajáték módosított
@@ -35,12 +40,16 @@
                 számítógép minden körben véletlenszerűen kiválaszt egy területkártyát, amit a játékosnak a megadott
                 szabályok figyelembe vételével el kell helyeznie a játéklapon. A játék akkor ér véget, ha: a játékos nem
                 tudja elhelyezni a szabályok szerint a területkártyáját, vagy betelt a játéklap. A játék végén a
-                lerakott területkártyák értékét összegezve, a számítógép kiírja a gyűjtött pontokat. Az első kártyát tetszőleges mezőre helyezhetjük. A további kártyákat úgy kell lerakni, hogy legalább egy oldaluk illeszkedjen egy már lerakott laphoz. Nem elég, ha a kártyának csak a sarka érintkezik egy (vagy több), már letett lap sarkával!</p>
+                lerakott területkártyák értékét összegezve, a számítógép kiírja a gyűjtött pontokat. Az első kártyát
+                tetszőleges mezőre helyezhetjük. A további kártyákat úgy kell lerakni, hogy legalább egy oldaluk
+                illeszkedjen egy már lerakott laphoz. Nem elég, ha a kártyának csak a sarka érintkezik egy (vagy több),
+                már letett lap sarkával!</p>
 
-            
+
         </div>
         <div class="content">
             <h2>Pontozás</h2>
+            <img src="img/Pontozas.png" alt="">
             <ul>
                 <li>A városok értéke annyiszor 2 pont, ahány kártyából áll.</li>
                 <li>Egy befejezett városért plusz 5 pont jár.</li>
@@ -52,11 +61,40 @@
         </div>
         <div class="content" id="jatekmenet">
             <h1>Játékmenet</h1>
-            <p></p>
+            <img src="img/fomenuscreen.png">
+
+            <ul>
+                <li>
+                    Mielőtt elindulna a játék a felhasználó válaszhat, hogy új játékot szeretne kezdeni vagy folytatni
+                    egy mentett állást
+                </li>
+
+                <li>
+                    A kártyát melynek előnézete a jobb felső sarokban látható, a bal egérgombbal tudjuk elhelyezni az
+                    üres mezőre kattintva, ha az elhelyezés a játék szabályainak megfelelő
+                </li>
+                <img src="img/jatekkezdesscreen.png">
+
+                <li>
+                    A kártyát az előnézet alatti forgató gombokkal tudjuk elforgatni
+
+                </li>
+                <li>
+                    A játék menet közben elmenthető a mentés ikonnal, ez a bin mappába menti a játék állását palya.txt
+                    néven
+                </li>
+                <img src="img/nemtudszlerakni.png" alt="">
+                <li>
+                    Ha a játékos nem tud szabályosan új lapot elhelyezni vagy az összes üres hely betelt, a játék véget
+                    ér
+
+                </li>
+                <li>
+                    Ha a játék véget ért a játékos lehetőséget kap a pontjainak elmentésére
+                </li>
+            </ul>
         </div>
     </div>
-
-
     <script src="script.js"></script>
 </body>
 

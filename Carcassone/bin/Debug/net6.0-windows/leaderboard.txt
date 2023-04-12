@@ -1,0 +1,4 @@
+Zsoti;110
+Krisz;97
+Tamas;106
+Tomi;102
